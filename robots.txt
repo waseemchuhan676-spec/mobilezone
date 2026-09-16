@@ -1,8 +1,5 @@
-# MobileZone — https://mobilezone-zeta.vercel.app/
 User-agent: *
 Allow: /
-
-# Optional: block query-only noise if needed later
-# Disallow: /*?
-
-Sitemap: https://mobilezone-zeta.vercel.app/sitemap.xml
+Disallow: /api/
+Disallow: /admin/
+Sitemap: https://mobilezone.vercel.app/sitemap.xml
