@@ -1,0 +1,38 @@
+# MobileZone
+
+> Mobile phone prices in Pakistan 2026 — latest phones, specifications, and rates in PKR.
+
+MobileZone lists mobile phone prices in Pakistan, with full specifications per phone.
+Canonical site: https://mobilezone-zeta.vercel.app/
+
+## What the site covers
+
+- 177 phone models across Samsung, Apple, Xiaomi, Redmi, Vivo, Oppo, Infinix, Tecno,
+  Realme, OnePlus, Google, Motorola, Honor, Sparx, Huawei, Nothing, Itel, and Nokia.
+- New & Incoming Mobiles: the 32 latest models, shown first on the home page.
+- Best Mobiles Under Rs 50,000 in Pakistan: a dated budget guide (priced models
+  Rs 50,000 and under, cheapest first).
+- Best Phones By Use Case: budget, camera, battery, gaming, and 5G picks.
+- Phone Finder: filter the full catalogue by brand, price range, RAM, and 5G.
+- PTA tax calculator: estimate PTA tax from a phone's price (USD or PKR).
+- Full specifications per phone: RAM, storage, camera, battery, and 5G support.
+- Related phones on every specification page, with photos where available.
+
+## Prices and freshness
+
+- Prices are in Pakistani Rupees (PKR), as listed on the site.
+- Prices updated: 29 October 2026.
+- Phones without a confirmed price are labelled "Price not confirmed".
+- Models that have not launched yet are labelled "Expected" (for example,
+  the Samsung Galaxy S26 Ultra); expected prices are not official prices.
+
+## Photos
+
+- Official product photos are shown where available (cards and specification pages).
+- Phones without an official photo show an illustrated phone preview instead.
+
+## Notes for AI tools and search engines
+
+- This is a price-information site, not a store: it does not sell phones.
+- Prices change with the market; always show the "Prices updated" date with any price.
+- Do not present an "Expected" price as an official or PTA-approved price.

@@ -22,11 +22,15 @@
 <meta name="twitter:title" content="Mobile Price in Pakistan 2026 | MobileZone">
 <meta name="twitter:description" content="Latest mobile prices in Pakistan – Samsung, iPhone, Redmi, Vivo, Oppo, Infinix. Specs, 5G phones & PTA tax calculator.">
 <meta name="theme-color" content="#155eef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 <style>
-:root{--b:#155eef;--b2:#0b4bc8;--t:#101828;--m:#667085;--bg:#f5f7fb;--line:#e4e7ec;--white:#fff;--ok:#027a48;--warn:#b54708;--bad:#b42318;--card:#fff}
+:root{--b:#155eef;--b2:#0b4bc8;--t:#101828;--m:#667085;--bg:#f5f7fb;--line:#e4e7ec;--white:#fff;--ok:#027a48;--warn:#b54708;--bad:#b42318;--card:#fff;--font-d:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--sh-sm:0 2px 10px rgba(16,24,40,.07);--sh-lg:0 16px 34px rgba(16,24,40,.14)}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
 body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--t);line-height:1.5;-webkit-font-smoothing:antialiased}
-body.dark{--b:#3b82f6;--b2:#2563eb;--t:#f1f5f9;--m:#94a3b8;--bg:#0f172a;--line:#1e293b;--white:#1e293b;--card:#1e293b;--ok:#34d399;--warn:#fbbf24;--bad:#f87171}
+h1,h2,.model,.price{font-family:var(--font-d)}
+body.dark{--b:#3b82f6;--b2:#2563eb;--t:#f1f5f9;--m:#94a3b8;--bg:#0f172a;--line:#1e293b;--white:#1e293b;--card:#1e293b;--ok:#34d399;--warn:#fbbf24;--bad:#f87171;--sh-sm:0 2px 12px rgba(0,0,0,.4);--sh-lg:0 16px 34px rgba(0,0,0,.5)}
 a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
 img{max-width:100%;height:auto;display:block}
 header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
@@ -37,7 +41,7 @@ header{background:var(--white);border-bottom:1px solid var(--line);position:stic
 .nav-right{display:flex;align-items:center;gap:8px}
 .icon-btn{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--t);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
 .icon-btn:hover{border-color:var(--b);color:var(--b)}
-.hero{padding:28px 0 30px;background:linear-gradient(145deg,#eef4ff 0%,var(--bg) 75%);overflow:hidden}
+.hero{padding:28px 0 30px;background:linear-gradient(135deg,#dbeafe 0%,#eff6ff 45%,var(--bg) 100%);overflow:hidden}
 .hero-inner{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);align-items:center;gap:18px}
 .hero-copy{position:relative;z-index:2}
 .hero-visual{min-height:310px;display:flex;align-items:center;justify-content:center;position:relative}
@@ -60,7 +64,7 @@ header{background:var(--white);border-bottom:1px solid var(--line);position:stic
 .hero-device:nth-child(4) .screen{background:linear-gradient(150deg,#111827,#16a34a 45%,#020617)}
 @media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-visual{min-height:245px;order:-1}.hero-reference-phones{max-width:620px}.hero{padding-top:20px}}
 @media(max-width:520px){.hero-visual{min-height:205px}.hero-reference-phones{max-width:560px}}
-body.dark .hero{background:linear-gradient(145deg,#1e3a5f 0%,var(--bg) 75%)}
+body.dark .hero{background:linear-gradient(135deg,#16294d 0%,#1e3a5f 45%,var(--bg) 100%)}
 h1{font-size:clamp(26px,5vw,44px);line-height:1.12;letter-spacing:-1px;font-weight:900;margin:0 0 10px}
 .hero p{color:var(--m);font-size:15.5px;max-width:640px;margin-bottom:18px}
 .unique-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
@@ -76,28 +80,29 @@ body.dark .search-wrap input{border-color:#334155}
 .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
 .chip{border:1px solid var(--line);background:var(--white);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;cursor:pointer;color:var(--t)}
 .chip:hover{color:var(--b);border-color:var(--b)}
-section{padding:32px 0}
+section{padding:36px 0}
 .head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:14px;gap:10px;flex-wrap:wrap}
 .head h2{margin:0;font-size:22px;font-weight:800}
+.head h2{border-left:4px solid var(--b);padding-left:10px}
 .head span{font-size:12.5px;color:var(--m)}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:transform .15s,box-shadow .15s;display:flex;flex-direction:column;position:relative}
-.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px #10182818}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s;display:flex;flex-direction:column;position:relative;box-shadow:var(--sh-sm)}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
 .card.selected{border-color:var(--b);box-shadow:0 0 0 2px var(--b)}
-.pic{height:200px;background:linear-gradient(180deg,#e8eef7 0%,#f8fafc 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pic{height:220px;background:linear-gradient(180deg,#e8eef7 0%,#f8fafc 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 body.dark .pic{background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%)}
 .pic img{width:100%;height:100%;object-fit:contain;padding:8px 12px;filter:drop-shadow(0 8px 16px rgba(16,24,40,.18))}
-.badge{position:absolute;top:8px;left:8px;background:var(--b);color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:5px}
+.badge{position:absolute;top:8px;left:8px;background:var(--b);color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:5px}.exp-pill{background:#fef3c7;color:#92400e;font-size:9px;font-weight:800;padding:2px 6px;border-radius:5px;margin-left:6px;vertical-align:middle}.fresh-line{font-size:12px;color:var(--m);margin-top:10px}
 .vscore{position:absolute;top:8px;right:8px;background:#ecfdf3;color:#027a48;font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px}
 body.dark .vscore{background:#064e3b;color:#34d399}
 .body{padding:11px 12px 13px;display:flex;flex-direction:column;flex:1}
 .brand{font-size:10px;color:var(--b);font-weight:800;text-transform:uppercase}
 .model{font-size:14px;font-weight:750;min-height:34px;margin:2px 0 5px;line-height:1.25}
-.price{font-weight:850;font-size:15px}
+.price{font-weight:900;font-size:19px;letter-spacing:-.2px}
 .meta{font-size:11.5px;color:var(--m);line-height:1.45;margin-top:3px;flex:1}
 .buttons{display:flex;gap:6px;margin-top:10px}
 .btn{flex:1;border:0;border-radius:8px;padding:8px 4px;font-weight:700;font-size:11.5px;cursor:pointer;text-align:center}
-.view{background:var(--b);color:#fff}.view:hover{background:var(--b2)}
+.view{background:linear-gradient(135deg,var(--b),var(--b2));color:#fff;box-shadow:0 4px 14px rgba(21,94,239,.35)}.view:hover{background:var(--b2)}
 .cmp-btn{background:#eef4ff;color:var(--b)}.cmp-btn:hover{background:#dce8ff}
 body.dark .cmp-btn{background:#1e3a5f;color:#93c5fd}
 .pricegrid,.brands,.usecase-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:9px}
@@ -210,7 +215,7 @@ body.dark footer{background:#020617}
 .spec-table td:last-child{font-weight:650}
 .spec-note{font-size:13px;color:var(--m);margin-top:10px;line-height:1.5}
 .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-.rel-card{background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:14px 12px;cursor:pointer;transition:.15s;text-align:left}
+.rel-card{background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:14px 12px;cursor:pointer;transition:.15s;text-align:left}.rel-pic{width:100%;height:64px;object-fit:contain;margin-bottom:8px;filter:drop-shadow(0 4px 8px rgba(16,24,40,.12))}
 .rel-card:hover{border-color:var(--b);transform:translateY(-2px);box-shadow:0 8px 20px rgba(16,24,40,.1)}
 .rel-card .rb{font-size:10px;font-weight:800;color:var(--b);text-transform:uppercase}
 .rel-card .rm{font-size:14px;font-weight:750;margin:3px 0 6px;line-height:1.25}
@@ -263,6 +268,7 @@ body.dark footer{background:#020617}
     <div class="hero-copy">
       <h1>Mobile Price in Pakistan 2026 – Latest Phones &amp; Rates</h1>
       <p>Find the latest <strong>mobile phones price in Pakistan</strong> for Samsung, iPhone, Xiaomi, Redmi, Vivo, Oppo, Infinix, Tecno and Realme. Compare specs, check <strong>5G phones</strong>, best mobiles under 30,000 &amp; 50,000, plus free <strong>PTA tax calculator</strong>.</p>
+      <p class="fresh-line"><span class="price-updated"></span></p>
       <div class="unique-bar">
       <span class="ub">⚡ PTA Tax Calculator</span>
       <span class="ub">📊 Value Score</span>
@@ -380,6 +386,13 @@ body.dark footer{background:#020617}
   <div class="wrap">
     <div class="head"><h2>Popular Mobiles</h2><span>Most searched</span></div>
     <div id="popular" class="grid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Best Mobiles Under Rs 50,000 in Pakistan</h2><span id="budget50info">Loading...</span></div>
+    <div id="budget50" class="grid"></div>
   </div>
 </section>
 
@@ -537,7 +550,7 @@ body.dark footer{background:#020617}
 <script>
 /* n:1 = new/incoming → show on main Latest section (32 models). Rest only via Brands / Finder */
 const phones=[
-{b:"Samsung",m:"Galaxy S26 Ultra",p:424999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",n:1},
+{b:"Samsung",m:"Galaxy S26 Ultra",p:424999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",n:1,e:1},
 {b:"Apple",m:"iPhone 17 Pro Max",p:565000,r:"12GB",s:"256GB",c:"48MP",bat:"5088mAh",g:"yes",n:1,img:"apple-iphone-17-pro-max.webp"},
 {b:"Samsung",m:"Galaxy S25 Ultra",p:404999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",n:1,img:"samsung-galaxy-s25-ultra.webp"},
 {b:"Apple",m:"iPhone 17 Pro",p:520500,r:"12GB",s:"256GB",c:"48MP",bat:"4252mAh",g:"yes",n:1,img:"apple-iphone-17-pro.webp"},
@@ -737,7 +750,7 @@ function valueScore(x){
 }
 
 const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
-const money=n=>n?"Rs. "+n.toLocaleString("en-PK"):"Discontinued";
+const money=n=>n?"Rs. "+n.toLocaleString("en-PK"):"Price not confirmed";
 
 /* Brand accent colors for realistic phone mockups */
 const brandColor={
@@ -807,12 +820,12 @@ function card(x){
       <span class="vscore" title="Value Score">★ ${vs}</span>
     </div>
     <div class="body">
-      <div class="brand">${x.b}</div>
+      <div class="brand">${x.b}${x.e?' <span class="exp-pill">Expected</span>':''}</div>
       <div class="model">${x.m}</div>
       <div class="price">${money(x.p)}</div>
       <div class="meta">${x.r} • ${x.s}<br>${x.c} • ${x.bat}</div>
       <div class="buttons">
-        <button type="button" class="btn view" style="flex:1" onclick='openSpec(${JSON.stringify({b:x.b,m:x.m,p:x.p,r:x.r,s:x.s,c:x.c,bat:x.bat,g:x.g,img:x.img})})'>Specifications</button>
+        <button type="button" class="btn view" style="flex:1" onclick='openSpec(${JSON.stringify({b:x.b,m:x.m,p:x.p,r:x.r,s:x.s,c:x.c,bat:x.bat,g:x.g,img:x.img,e:x.e})})'>Specifications</button>
       </div>
     </div>
   </article>`;
@@ -829,6 +842,14 @@ function showLatest(){
 }
 showLatest();
 render(latestPhones.slice(0,8),"popular");
+
+/* Freshness: single date constant, update on each price refresh */
+const PRICE_UPDATED="29 October 2026";
+document.querySelectorAll(".price-updated").forEach(el=>el.textContent="Prices updated: "+PRICE_UPDATED);
+/* Budget guide: priced models Rs 50,000 and under, cheapest first */
+const budget50list=phones.filter(x=>x.p>0&&x.p<=50000).sort((a,b)=>a.p-b.p);
+render(budget50list,"budget50");
+document.getElementById("budget50info").textContent=budget50list.length+" phones \u00b7 Prices updated: "+PRICE_UPDATED;
 
 const brands=[...new Set(phones.map(x=>x.b))].sort();
 brands.forEach(b=>brand.insertAdjacentHTML("beforeend",`<option value="${b}">${b}</option>`));
@@ -1026,7 +1047,8 @@ function openSpec(x){
   }).sort((a,b)=>valueScore(b)-valueScore(a)).slice(0,6);
 
   const relHtml=related.map(p=>`
-    <div class="rel-card" role="button" tabindex="0" onclick='openSpec(${JSON.stringify({b:p.b,m:p.m,p:p.p,r:p.r,s:p.s,c:p.c,bat:p.bat,g:p.g,img:p.img})})'>
+    <div class="rel-card" role="button" tabindex="0" onclick='openSpec(${JSON.stringify({b:p.b,m:p.m,p:p.p,r:p.r,s:p.s,c:p.c,bat:p.bat,g:p.g,img:p.img,e:p.e})})'>
+      ${p.img?`<img class="rel-pic" loading="lazy" decoding="async" alt="${p.b} ${p.m} price in Pakistan" src="images/${p.img}">`:``}
       <div class="rb">${p.b}</div>
       <div class="rm">${p.m}</div>
       <div class="rp">${money(p.p)}</div>
@@ -1060,6 +1082,7 @@ function openSpec(x){
         <div class="spec-badges">
           <span>★ Value ${vs}</span>
           <span>${x.g==="yes"?"5G":"4G"}</span>
+          ${x.e?`<span>Expected price</span>`:``}
           <span>${best}</span>
           <span>${ex.refresh}</span>
         </div>
