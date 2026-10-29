@@ -178,7 +178,7 @@ body.dark footer{background:#020617}
 .spec-back-btn:hover{border-color:var(--b);color:var(--b)}
 .spec-page-inner{max-width:960px;margin:0 auto;padding:24px 16px 40px}
 .spec-hero{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start;margin-bottom:24px}
-.spec-visual{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 20px;text-align:center}
+.spec-visual{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 20px;text-align:center}.spec-photo{width:100%;max-height:280px;object-fit:contain;filter:drop-shadow(0 10px 20px rgba(16,24,40,.20))}
 .spec-devices{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .spec-phone{width:130px;height:260px;background:#111;border-radius:24px;padding:7px;box-shadow:0 12px 28px rgba(0,0,0,.28)}
 .spec-phone.bk{transform:scale(.92);opacity:.96}
@@ -812,7 +812,7 @@ function card(x){
       <div class="price">${money(x.p)}</div>
       <div class="meta">${x.r} • ${x.s}<br>${x.c} • ${x.bat}</div>
       <div class="buttons">
-        <button type="button" class="btn view" style="flex:1" onclick='openSpec(${JSON.stringify({b:x.b,m:x.m,p:x.p,r:x.r,s:x.s,c:x.c,bat:x.bat,g:x.g})})'>Specifications</button>
+        <button type="button" class="btn view" style="flex:1" onclick='openSpec(${JSON.stringify({b:x.b,m:x.m,p:x.p,r:x.r,s:x.s,c:x.c,bat:x.bat,g:x.g,img:x.img})})'>Specifications</button>
       </div>
     </div>
   </article>`;
@@ -1026,7 +1026,7 @@ function openSpec(x){
   }).sort((a,b)=>valueScore(b)-valueScore(a)).slice(0,6);
 
   const relHtml=related.map(p=>`
-    <div class="rel-card" role="button" tabindex="0" onclick='openSpec(${JSON.stringify({b:p.b,m:p.m,p:p.p,r:p.r,s:p.s,c:p.c,bat:p.bat,g:p.g})})'>
+    <div class="rel-card" role="button" tabindex="0" onclick='openSpec(${JSON.stringify({b:p.b,m:p.m,p:p.p,r:p.r,s:p.s,c:p.c,bat:p.bat,g:p.g,img:p.img})})'>
       <div class="rb">${p.b}</div>
       <div class="rm">${p.m}</div>
       <div class="rp">${money(p.p)}</div>
@@ -1036,7 +1036,8 @@ function openSpec(x){
   document.getElementById("specBody").innerHTML=`
     <div class="spec-hero">
       <div class="spec-visual">
-        <div class="spec-devices">
+        ${x.img?`<img class="spec-photo" loading="lazy" decoding="async" alt="${x.b} ${x.m} price in Pakistan" src="images/${x.img}">`:``}
+        <div class="spec-devices"${x.img?` style="display:none"`:``}>
           <div class="spec-phone">
             <div class="spec-screen" style="background:linear-gradient(160deg,${accent} 0%,#0f172a 55%,#020617 100%)">
               <div class="dot"></div>
@@ -1050,7 +1051,7 @@ function openSpec(x){
             </div>
           </div>
         </div>
-        <p class="spec-cap">Front &amp; back preview</p>
+        <p class="spec-cap">${x.img?`Official product photo`:`Front &amp; back preview`}</p>
       </div>
       <div class="spec-info">
         <div class="brand-l">${x.b}</div>
