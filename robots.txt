@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Sitemap: https://mobilezone.vercel.app/sitemap.xml
+Sitemap: https://mobilezone-zeta.vercel.app/sitemap.xml

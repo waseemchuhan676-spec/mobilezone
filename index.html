@@ -10,7 +10,7 @@
 <meta name="author" content="MobileZone">
 <meta name="geo.region" content="PK">
 <meta name="geo.placename" content="Pakistan">
-<link rel="canonical" href="https://mobilezone.vercel.app/">
+<link rel="canonical" href="https://mobilezone-zeta.vercel.app/">
 <link rel="alternate" hreflang="en-PK" href="https://mobilezone.vercel.app/">
 <meta property="og:locale" content="en_PK">
 <meta property="og:type" content="website">
@@ -92,6 +92,8 @@ section{padding:36px 0}
 .pic{height:220px;background:linear-gradient(180deg,#e8eef7 0%,#f8fafc 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 body.dark .pic{background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%)}
 .pic img{width:100%;height:100%;object-fit:contain;padding:8px 12px;filter:drop-shadow(0 8px 16px rgba(16,24,40,.18))}
+.coming-soon{font-size:22px;font-weight:800;color:var(--mut,#64748b);letter-spacing:.2px;text-align:center}
+.spec-visual .coming-soon{padding:60px 0}
 .badge{position:absolute;top:8px;left:8px;background:var(--b);color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:5px}.exp-pill{background:#fef3c7;color:#92400e;font-size:9px;font-weight:800;padding:2px 6px;border-radius:5px;margin-left:6px;vertical-align:middle}.fresh-line{font-size:12px;color:var(--m);margin-top:10px}
 .vscore{position:absolute;top:8px;right:8px;background:#ecfdf3;color:#027a48;font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px}
 body.dark .vscore{background:#064e3b;color:#34d399}
@@ -550,7 +552,7 @@ body.dark footer{background:#020617}
 <script>
 /* n:1 = new/incoming → show on main Latest section (32 models). Rest only via Brands / Finder */
 const phones=[
-{b:"Samsung",m:"Galaxy S26 Ultra",p:424999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",n:1,e:1},
+{b:"Samsung",m:"Galaxy S26 Ultra",p:424999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",n:1,e:1,img:"samsung-galaxy-s26-ultra.webp"},
 {b:"Apple",m:"iPhone 17 Pro Max",p:565000,r:"12GB",s:"256GB",c:"48MP",bat:"5088mAh",g:"yes",n:1,img:"apple-iphone-17-pro-max.webp"},
 {b:"Samsung",m:"Galaxy S25 Ultra",p:404999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",n:1,img:"samsung-galaxy-s25-ultra.webp"},
 {b:"Apple",m:"iPhone 17 Pro",p:520500,r:"12GB",s:"256GB",c:"48MP",bat:"4252mAh",g:"yes",n:1,img:"apple-iphone-17-pro.webp"},
@@ -561,7 +563,7 @@ const phones=[
 {b:"Vivo",m:"X300 Pro",p:349999,r:"16GB",s:"512GB",c:"50MP",bat:"5500mAh",g:"yes",n:1,img:"vivo-x300-pro.webp"},
 {b:"OnePlus",m:"13",p:249999,r:"16GB",s:"512GB",c:"50MP",bat:"6000mAh",g:"yes",n:1,img:"oneplus-13.webp"},
 {b:"Google",m:"Pixel 9 Pro",p:279999,r:"16GB",s:"256GB",c:"50MP",bat:"5060mAh",g:"yes",n:1},
-{b:"Samsung",m:"Galaxy Z Fold7",p:414999,r:"12GB",s:"256GB",c:"200MP",bat:"4400mAh",g:"yes",n:1},
+{b:"Samsung",m:"Galaxy Z Fold7",p:414999,r:"12GB",s:"256GB",c:"200MP",bat:"4400mAh",g:"yes",n:1,img:"samsung-galaxy-z-fold7.webp"},
 {b:"Xiaomi",m:"Poco F7 Ultra",p:259999,r:"12GB",s:"512GB",c:"50MP",bat:"5500mAh",g:"yes",n:1,img:"xiaomi-poco-f7-ultra.webp"},
 {b:"Oppo",m:"Reno 16 Pro",p:219999,r:"12GB",s:"256GB",c:"50MP",bat:"5800mAh",g:"yes",n:1,img:"oppo-reno-16-pro.webp"},
 {b:"Vivo",m:"V70",p:161499,r:"12GB",s:"256GB",c:"50MP",bat:"5500mAh",g:"yes",n:1,img:"vivo-v70.webp"},
@@ -575,49 +577,49 @@ const phones=[
 {b:"Xiaomi",m:"Redmi Note 14 Pro",p:82999,r:"8GB",s:"256GB",c:"200MP",bat:"5500mAh",g:"yes",n:1,img:"xiaomi-redmi-note-14-pro.webp"},
 {b:"Realme",m:"GT 7",p:219999,r:"16GB",s:"512GB",c:"50MP",bat:"7000mAh",g:"yes",n:1},
 {b:"Nothing",m:"Phone (3)",p:129999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"nothing-phone-3.webp"},
-{b:"Motorola",m:"Edge 60 Pro",p:149999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",n:1},
+{b:"Motorola",m:"Edge 60 Pro",p:149999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"motorola-edge-60-pro.webp"},
 {b:"Infinix",m:"GT 50 Pro",p:159999,r:"12GB",s:"256GB",c:"50MP",bat:"6500mAh",g:"yes",n:1},
-{b:"Vivo",m:"V70 FE",p:124999,r:"12GB",s:"256GB",c:"50MP",bat:"7000mAh",g:"yes",n:1},
-{b:"Oppo",m:"Reno 16F",p:149999,r:"8GB",s:"256GB",c:"50MP",bat:"7000mAh",g:"yes",n:1},
-{b:"Tecno",m:"Camon 50",p:89499,r:"8GB",s:"256GB",c:"50MP",bat:"6500mAh",g:"yes",n:1},
-{b:"Honor",m:"X9c",p:89999,r:"12GB",s:"256GB",c:"108MP",bat:"6600mAh",g:"yes",n:1},
+{b:"Vivo",m:"V70 FE",p:124999,r:"12GB",s:"256GB",c:"50MP",bat:"7000mAh",g:"yes",n:1,img:"vivo-v70-fe.webp"},
+{b:"Oppo",m:"Reno 16F",p:149999,r:"8GB",s:"256GB",c:"50MP",bat:"7000mAh",g:"yes",n:1,img:"oppo-reno-16f.webp"},
+{b:"Tecno",m:"Camon 50",p:89499,r:"8GB",s:"256GB",c:"50MP",bat:"6500mAh",g:"yes",n:1,img:"tecno-camon-50.webp"},
+{b:"Honor",m:"X9c",p:89999,r:"12GB",s:"256GB",c:"108MP",bat:"6600mAh",g:"yes",n:1,img:"honor-x9c.webp"},
 {b:"Realme",m:"C100",p:89999,r:"8GB",s:"256GB",c:"50MP",bat:"8000mAh",g:"yes",n:1},
 /* —— older / brand-only models (not on main Latest grid) —— */
-{b:"Samsung",m:"Galaxy S24 Ultra",p:359999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes"},
-{b:"Apple",m:"iPhone 16 Pro Max",p:469999,r:"8GB",s:"256GB",c:"48MP",bat:"4685mAh",g:"yes"},
-{b:"Apple",m:"iPhone 16",p:329999,r:"8GB",s:"128GB",c:"48MP",bat:"3561mAh",g:"yes"},
+{b:"Samsung",m:"Galaxy S24 Ultra",p:359999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-s24-ultra.webp"},
+{b:"Apple",m:"iPhone 16 Pro Max",p:469999,r:"8GB",s:"256GB",c:"48MP",bat:"4685mAh",g:"yes",img:"apple-iphone-16-pro-max.webp"},
+{b:"Apple",m:"iPhone 16",p:329999,r:"8GB",s:"128GB",c:"48MP",bat:"3561mAh",g:"yes",img:"apple-iphone-16.webp"},
 {b:"Xiaomi",m:"Redmi Note 14",p:57999,r:"8GB",s:"256GB",c:"108MP",bat:"5500mAh",g:"no"},
-{b:"Samsung",m:"Galaxy A26",p:73500,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
+{b:"Samsung",m:"Galaxy A26",p:73500,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a26.webp"},
 {b:"Infinix",m:"Note 50",p:64999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
 {b:"Tecno",m:"Spark 50 Pro",p:74999,r:"8GB",s:"256GB",c:"50MP",bat:"6000mAh",g:"yes"},
 {b:"Vivo",m:"Y31",p:31999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Hot 70 Pro",p:84999,r:"8GB",s:"256GB",c:"50MP",bat:"6000mAh",g:"yes"},
 {b:"Oppo",m:"A6",p:69999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
-{b:"Samsung",m:"Galaxy A07",p:33999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
+{b:"Samsung",m:"Galaxy A07",p:33999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"samsung-galaxy-a07.webp"},
 {b:"Xiaomi",m:"Redmi 15C",p:46999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
-{b:"Tecno",m:"Camon 40 Pro",p:64999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
+{b:"Tecno",m:"Camon 40 Pro",p:64999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"tecno-camon-40-pro.webp"},
 {b:"Infinix",m:"Hot 60 Pro",p:46999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
 {b:"Realme",m:"C85 Pro",p:52999,r:"8GB",s:"256GB",c:"50MP",bat:"6000mAh",g:"yes"},
-{b:"Vivo",m:"Y05e",p:39999,r:"4GB",s:"64GB",c:"8MP",bat:"5150mAh",g:"no"},
+{b:"Vivo",m:"Y05e",p:39999,r:"4GB",s:"64GB",c:"8MP",bat:"5150mAh",g:"no",img:"vivo-y05e.webp"},
 {b:"Infinix",m:"Smart 20",p:30999,r:"4GB",s:"128GB",c:"50MP",bat:"5200mAh",g:"no"},
-{b:"Tecno",m:"Spark Go 3",p:25899,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no"},
-{b:"Samsung",m:"Galaxy M17e",p:49999,r:"6GB",s:"128GB",c:"50MP",bat:"6000mAh",g:"no"},
+{b:"Tecno",m:"Spark Go 3",p:25899,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no",img:"tecno-spark-go-3.webp"},
+{b:"Samsung",m:"Galaxy M17e",p:49999,r:"6GB",s:"128GB",c:"50MP",bat:"6000mAh",g:"yes",img:"samsung-galaxy-m17e-5g.webp"},
 {b:"Xiaomi",m:"Redmi A5",p:30999,r:"4GB",s:"128GB",c:"13MP",bat:"5000mAh",g:"no"},
 {b:"Realme",m:"Note 70",p:31999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Itel",m:"A100C",p:23999,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no"},
 {b:"Nokia",m:"G42 5G",p:54999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes"},
-{b:"Motorola",m:"Moto G77",p:94999,r:"8GB",s:"128GB",c:"108MP",bat:"5200mAh",g:"yes"},
-{b:"OnePlus",m:"Nord CE 5",p:89999,r:"8GB",s:"256GB",c:"50MP",bat:"5500mAh",g:"yes"},
+{b:"Motorola",m:"Moto G77",p:94999,r:"8GB",s:"128GB",c:"108MP",bat:"5200mAh",g:"yes",img:"motorola-moto-g77.webp"},
+{b:"OnePlus",m:"Nord CE 5",p:89999,r:"8GB",s:"256GB",c:"50MP",bat:"5500mAh",g:"yes",img:"oneplus-nord-ce-5.webp"},
 {b:"Google",m:"Pixel 8a",p:159999,r:"8GB",s:"128GB",c:"64MP",bat:"4492mAh",g:"yes"},
-{b:"Samsung",m:"Galaxy A16",p:54999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
+{b:"Samsung",m:"Galaxy A16",p:54999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a16-5g.webp"},
 {b:"Infinix",m:"Note 60 5G",p:89999,r:"8GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes"},
-{b:"Tecno",m:"Pova 8",p:79999,r:"8GB",s:"256GB",c:"108MP",bat:"7000mAh",g:"yes"},
+{b:"Tecno",m:"Pova 8",p:79999,r:"8GB",s:"256GB",c:"108MP",bat:"7000mAh",g:"yes",img:"tecno-pova-8.webp"},
 {b:"Vivo",m:"Y19s",p:42999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
-{b:"Oppo",m:"A57",p:49999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
+{b:"Oppo",m:"A57",p:49999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"oppo-a57.webp"},
 {b:"Xiaomi",m:"Poco C85",p:47999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Honor",m:"T10",p:32999,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no"},
 {b:"Realme",m:"C100x",p:64999,r:"6GB",s:"128GB",c:"50MP",bat:"8000mAh",g:"no"},
-{b:"Samsung",m:"Galaxy F70e",p:44999,r:"6GB",s:"128GB",c:"50MP",bat:"6000mAh",g:"no"},
+{b:"Samsung",m:"Galaxy F70e",p:44999,r:"6GB",s:"128GB",c:"50MP",bat:"6000mAh",g:"yes",img:"samsung-galaxy-f70e-5g.webp"},
 {b:"Infinix",m:"Hot 50 Pro",p:42499,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
 {b:"Tecno",m:"Spark 40 Pro",p:68999,r:"8GB",s:"256GB",c:"50MP",bat:"5200mAh",g:"yes"},
 {b:"Sparx",m:"Neo 8 Pro",p:34999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
@@ -625,14 +627,14 @@ const phones=[
 {b:"Huawei",m:"nova 13",p:89999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
 {b:"Huawei",m:"Pura 70",p:249999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
 {b:"Realme",m:"13 Pro+",p:134999,r:"12GB",s:"256GB",c:"50MP",bat:"5200mAh",g:"yes"},
-{b:"Samsung",m:"Galaxy A55 5G",p:109999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
+{b:"Samsung",m:"Galaxy A55 5G",p:109999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a55-5g.webp"},
 {b:"Vivo",m:"Y36",p:54999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Oppo",m:"A78",p:64999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes"},
-{b:"Infinix",m:"Zero 40",p:99999,r:"12GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes"},
+{b:"Infinix",m:"Zero 40",p:99999,r:"12GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes",img:"infinix-zero-40.webp"},
 {b:"Tecno",m:"Pova 6 Pro",p:69999,r:"8GB",s:"256GB",c:"108MP",bat:"6000mAh",g:"yes"},
 {b:"Xiaomi",m:"Redmi 14C",p:29999,r:"4GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"OnePlus",m:"Nord 4",p:119999,r:"12GB",s:"256GB",c:"50MP",bat:"5500mAh",g:"yes"},
-{b:"Google",m:"Pixel 9",p:239999,r:"12GB",s:"128GB",c:"50MP",bat:"4700mAh",g:"yes"}
+{b:"Google",m:"Pixel 9",p:239999,r:"12GB",s:"128GB",c:"50MP",bat:"4700mAh",g:"yes",img:"google-pixel-9.webp"}
 ];
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
@@ -815,7 +817,7 @@ function card(x){
   const vs=valueScore(x);
   return `<article class="card" data-b="${x.b}" data-m="${x.m}">
     <div class="pic">
-      <img loading="lazy" decoding="async" width="400" height="480" alt="${name} price in Pakistan" src="${x.img?('images/'+x.img):('data:image/svg+xml;charset=UTF-8,'+phoneSVG(x))}">
+      ${x.img?`<img loading="lazy" decoding="async" width="400" height="480" alt="${name} price in Pakistan" src="images/${x.img}">`:`<div class="coming-soon">Coming Soon</div>`}
       ${x.g==="yes"?'<span class="badge">5G</span>':""}
       <span class="vscore" title="Value Score">★ ${vs}</span>
     </div>
@@ -1059,7 +1061,8 @@ function openSpec(x){
     <div class="spec-hero">
       <div class="spec-visual">
         ${x.img?`<img class="spec-photo" loading="lazy" decoding="async" alt="${x.b} ${x.m} price in Pakistan" src="images/${x.img}">`:``}
-        <div class="spec-devices"${x.img?` style="display:none"`:``}>
+        ${x.img?``:`<div class="coming-soon">Coming Soon</div>`}
+        <div class="spec-devices" style="display:none">
           <div class="spec-phone">
             <div class="spec-screen" style="background:linear-gradient(160deg,${accent} 0%,#0f172a 55%,#020617 100%)">
               <div class="dot"></div>
@@ -1073,7 +1076,7 @@ function openSpec(x){
             </div>
           </div>
         </div>
-        <p class="spec-cap">${x.img?`Official product photo`:`Front &amp; back preview`}</p>
+        <p class="spec-cap">${x.img?`Official product photo`:`Photo coming soon`}</p>
       </div>
       <div class="spec-info">
         <div class="brand-l">${x.b}</div>
