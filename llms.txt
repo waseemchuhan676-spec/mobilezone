@@ -7,16 +7,16 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 
 ## What the site covers
 
-- 177 phone models across Samsung, Apple, Xiaomi, Redmi, Vivo, Oppo, Infinix, Tecno,
-  Realme, OnePlus, Google, Motorola, Honor, Sparx, Huawei, Nothing, Itel, and Nokia.
-- New & Incoming Mobiles: the 32 latest models, shown first on the home page.
+- 63 phone models across Samsung, Apple, Xiaomi, Redmi, Vivo, Oppo, Infinix, Tecno,
+  OnePlus, Google, Motorola, Honor, Sparx, Huawei, Nothing, and Nokia.
+- New & Incoming Mobiles: the 27 latest models, shown first on the home page.
 - Best Mobiles Under Rs 50,000 in Pakistan: a dated budget guide (priced models
   Rs 50,000 and under, cheapest first).
 - Best Phones By Use Case: budget, camera, battery, gaming, and 5G picks.
-- Phone Finder: filter the full catalogue by brand, price range, RAM, and 5G.
+- Phone Finder: filter the full catalogue by brand, price range, RAM, storage, battery, camera, and 5G.
 - PTA tax calculator: estimate PTA tax from a phone's price (USD or PKR).
 - Full specifications per phone: RAM, storage, camera, battery, and 5G support.
-- Related phones on every specification page, with photos where available.
+- Related phones on every specification page, with photos.
 
 ## Prices and freshness
 
@@ -28,8 +28,7 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 
 ## Photos
 
-- Official product photos are shown where available (cards and specification pages).
-- Phones without an official photo show an illustrated phone preview instead.
+- Every listed phone has an official product photo (cards and specification pages).
 
 ## Notes for AI tools and search engines
 
@@ -40,12 +39,34 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 ## Pages
 
 - Homepage: https://mobilezone-zeta.vercel.app/
-- Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /realme-mobile-prices, /itel-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices
+- Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices
 - Budget pages: /best-phones-under-40000, /best-phones-under-50000, /best-phones-under-70000, /best-phones-under-100000, /best-5g-phones-pakistan
 - Latest phones: /latest-mobile-phones
-- Individual phone pages: /<brand>-<model>-price-pakistan (82 live-priced models in wave 1)
+- Individual phone pages: /<brand>-<model>-price-pakistan (63 models: 56 live-priced + 7 archive with photos, price not confirmed)
 - Phone pages show confirmed specs only (price, RAM, storage, camera, battery, 5G). Display, processor, charging, dimensions, PTA status and warranty are marked as not confirmed where unverified — never estimated.
 
 - Compare tool: /compare-mobiles (pick up to 3 phones, side-by-side price/RAM/storage/camera/battery/5G; no winner declared; prices approximate)
 - PTA Tax Calculator (homepage tools): FY 2026-27 component structure (SRO 1064(I)/2026) — regulatory duty + sales tax (18% up to $500, 25% above) + handset levy + income tax (CNIC only, doubled for non-ATL); passport route exempt from income tax. Estimate only — DIRBS (dirbs.pta.gov.pk) shows the exact figure for an IMEI. IMEI input is never sent or stored.
 - Phone Finder (homepage): filters for brand, price, RAM, storage, battery, camera and 5G — all from confirmed catalogue data only.
+
+## Guides
+- https://mobilezone-zeta.vercel.app/guides/how-to-check-pta-approval-status: How to Check PTA Approval Status in Pakistan | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/how-to-check-imei-status: How to Check IMEI Status | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/pta-tax-on-mobile-phones-pakistan: PTA Tax on Mobile Phones in Pakistan (2026) | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/best-gaming-phones-pakistan: Best Gaming Phones in Pakistan: What Actually Matters | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/best-camera-phones-pakistan: Best Camera Phones in Pakistan: Beyond Megapixels | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/best-battery-phones-pakistan: Best Battery Phones in Pakistan: How to Pick for Battery Life | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/amoled-vs-lcd-display: AMOLED vs LCD Display: Which Is Better? | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/8gb-vs-12gb-ram: 8GB vs 12GB RAM: How Much Do You Need? | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/snapdragon-vs-mediatek: Snapdragon vs MediaTek: Which Chipset Is Better? | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/pta-approved-vs-non-pta-phones: PTA Approved vs Non-PTA Phones: The Full Difference | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/how-to-buy-used-phone-safely-pakistan: How to Buy a Used Phone Safely in Pakistan | MobileZone
+- https://mobilezone-zeta.vercel.app/guides/how-to-choose-mobile-by-budget-pakistan: How to Choose a Mobile Phone by Budget in Pakistan | MobileZone
+
+## Trust pages
+- https://mobilezone-zeta.vercel.app/about: About MobileZone | Mobile Prices in Pakistan
+- https://mobilezone-zeta.vercel.app/contact: Contact MobileZone
+- https://mobilezone-zeta.vercel.app/privacy-policy: Privacy Policy | MobileZone
+- https://mobilezone-zeta.vercel.app/disclaimer: Disclaimer | MobileZone
+- https://mobilezone-zeta.vercel.app/editorial-policy: Editorial Policy | MobileZone
+- https://mobilezone-zeta.vercel.app/mobile-guides: Mobile Guides | MobileZone
