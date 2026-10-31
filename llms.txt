@@ -36,3 +36,12 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 - This is a price-information site, not a store: it does not sell phones.
 - Prices change with the market; always show the "Prices updated" date with any price.
 - Do not present an "Expected" price as an official or PTA-approved price.
+
+## Pages
+
+- Homepage: https://mobilezone-zeta.vercel.app/
+- Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /realme-mobile-prices, /itel-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices
+- Budget pages: /best-phones-under-40000, /best-phones-under-50000, /best-phones-under-70000, /best-phones-under-100000, /best-5g-phones-pakistan
+- Latest phones: /latest-mobile-phones
+- Individual phone pages: /<brand>-<model>-price-pakistan (82 live-priced models in wave 1)
+- Phone pages show confirmed specs only (price, RAM, storage, camera, battery, 5G). Display, processor, charging, dimensions, PTA status and warranty are marked as not confirmed where unverified — never estimated.
