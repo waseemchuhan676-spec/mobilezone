@@ -42,7 +42,7 @@ header{background:var(--white);border-bottom:1px solid var(--line);position:stic
 .links{display:flex;gap:14px;font-size:13px;font-weight:600;flex-wrap:wrap}
 .links a{padding:4px 0;border-bottom:2px solid transparent}.links a:hover{color:var(--b);border-color:var(--b)}
 .nav-right{display:flex;align-items:center;gap:8px}
-.icon-btn{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--t);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
+.nav-toggle{display:none}.icon-btn{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--t);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
 .icon-btn:hover{border-color:var(--b);color:var(--b)}
 .hero{padding:28px 0 30px;background:linear-gradient(135deg,#dbeafe 0%,#eff6ff 45%,var(--bg) 100%);overflow:hidden}
 .hero-inner{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);align-items:center;gap:18px}
@@ -50,17 +50,17 @@ header{background:var(--white);border-bottom:1px solid var(--line);position:stic
 .hero-visual{min-height:330px;display:flex;align-items:center;justify-content:center;position:relative}
 .hero-glow{position:absolute;width:380px;height:260px;border-radius:50%;background:radial-gradient(circle,#bfdbfe 0%,#dbeafe 55%,transparent 72%);opacity:.9}
 .hero-new-badge{position:absolute;top:6px;right:8px;z-index:6;background:#111827;color:#fff;font-size:12px;font-weight:800;letter-spacing:.4px;padding:7px 12px;border-radius:999px;box-shadow:0 8px 18px #17203333}
-.hero-phones{position:relative;z-index:2;width:100%;max-width:520px;height:330px}
-.hero-phone{position:absolute;width:150px;margin:0;background:#ffffffee;border:1px solid #e2e8f0;border-radius:20px;padding:10px 10px 12px;box-shadow:0 22px 38px #1720332e,0 4px 10px #1720331a;text-align:center}
-.hero-phone img{width:100%;height:150px;object-fit:contain;display:block}
+.hero-phones{position:relative;z-index:2;width:100%;max-width:560px;height:300px}
+.hero-phone{position:absolute;width:130px;margin:0;background:#ffffffee;border:1px solid #e2e8f0;border-radius:20px;padding:10px 10px 12px;box-shadow:0 22px 38px #1720332e,0 4px 10px #1720331a;text-align:center}
+.hero-phone img{width:100%;height:130px;object-fit:contain;display:block}
 .hero-phone figcaption{margin-top:8px}
 .hero-phone figcaption b{display:block;font-size:13px;line-height:1.25}
 .hero-phone figcaption span{display:block;font-size:12px;color:var(--b);font-weight:800;margin-top:2px}
-.hp1{left:1%;top:56px;transform:rotate(-10deg);z-index:1}
-.hp2{left:25%;top:6px;transform:rotate(-2deg) scale(1.06);z-index:3}
-.hp3{left:50%;top:20px;transform:rotate(6deg);z-index:2}
-.hp4{left:70%;top:60px;transform:rotate(12deg) scale(.94);z-index:1}
-.hero-phone:hover{transform:rotate(0) scale(1.08);z-index:5;transition:transform .25s}
+.hp1{left:0;top:50px;transform:rotate(-6deg);z-index:1}
+.hp2{left:140px;top:4px;transform:rotate(-2deg) scale(1.03);z-index:3}
+.hp3{left:280px;top:16px;transform:rotate(3deg);z-index:2}
+.hp4{left:420px;top:54px;transform:rotate(6deg) scale(.97);z-index:1}
+.hero-phone:hover{transform:rotate(0) scale(1.06);z-index:5;transition:transform .25s}
 @media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-visual{min-height:280px;order:-1}.hero{padding-top:20px}}
 @media(max-width:520px){.hero-visual{min-height:240px}.hero-phones{max-width:360px;height:260px}.hero-phone{width:118px}.hero-phone img{height:118px}.hp4{left:66%}}
 body.dark .hero{background:linear-gradient(135deg,#16294d 0%,#1e3a5f 45%,var(--bg) 100%)}
@@ -177,7 +177,7 @@ body.dark footer{background:#020617}
 .foot p,.foot a{font-size:13px;line-height:1.55;color:#94a3b8}.foot a:hover{color:#fff}
 .foot-bottom{margin-top:22px;padding-top:14px;border-top:1px solid #1e293b;font-size:12px;text-align:center;color:#64748b}
 @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.pricegrid,.brands,.usecase-grid{grid-template-columns:repeat(3,1fr)}.tools-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
-@media(max-width:650px){.links{display:none}.grid{grid-template-columns:repeat(2,1fr);gap:9px}.pic{height:175px}.filters{grid-template-columns:1fr 1fr}.head h2{font-size:18px}.hero{padding:24px 0 20px}.pricegrid,.brands,.usecase-grid{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:1fr}.tool-card .row{grid-template-columns:1fr}}
+@media(max-width:650px){.links{display:none}.nav-toggle{display:flex}.links.open{display:flex;position:absolute;top:58px;left:0;right:0;flex-direction:column;background:var(--white);border-bottom:1px solid var(--line);padding:12px 16px;gap:12px;z-index:60}.hero-phones{display:grid;grid-template-columns:1fr 1fr;gap:10px;height:auto;max-width:100%}.hero-phone{position:static;width:auto;transform:none}.hero-phone img{height:120px}.hero-phone:hover{transform:scale(1.03)}.grid{grid-template-columns:repeat(2,1fr);gap:9px}.pic{height:175px}.filters{grid-template-columns:1fr 1fr}.head h2{font-size:18px}.hero{padding:24px 0 20px}.pricegrid,.brands,.usecase-grid{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:1fr}.tool-card .row{grid-template-columns:1fr}}
 @media(max-width:400px){.filters{grid-template-columns:1fr}}
 /* Full-page specifications view */
 .spec-page{display:none;position:fixed;inset:0;z-index:100;background:var(--bg);overflow-y:auto}
@@ -243,7 +243,7 @@ body.dark footer{background:#020617}
 {"@type":"Organization","name":"MobileZone","url":"https://mobilezone-zeta.vercel.app/"},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"What is the latest mobile price in Pakistan 2026?","acceptedAnswer":{"@type":"Answer","text":"Mobile prices in Pakistan change with market rates. MobileZone lists approximate prices for Samsung, iPhone, Xiaomi, Vivo, Oppo, Infinix, Tecno and more. Always confirm the final price at a local shop."}},
-{"@type":"Question","name":"How to calculate PTA tax on a mobile phone in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Use the MobileZone PTA Tax Calculator. Enter the phone price in USD or PKR, select smartphone, and get an estimated PTA tax and total landing cost. Confirm the official amount on the PTA DIRBS portal."}},
+{"@type":"Question","name":"How to calculate PTA tax on a mobile phone in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Use the MobileZone PTA Tax Calculator. Pick a phone or enter its price, choose Passport or CNIC registration and filer status, and get an estimated breakdown of regulatory duty, sales tax, handset levy and income tax. Confirm the official amount on the PTA DIRBS portal."}},
 {"@type":"Question","name":"What is the best phone under 50000 in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Under Rs. 50,000 popular options include Redmi Note series, Infinix Note, Tecno Camon, Samsung Galaxy A-series and Vivo Y series. Use MobileZone filters for under 50,000 and compare Value Scores."}},
 {"@type":"Question","name":"What is the best phone under 30000 in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Under Rs. 30,000 look at Infinix, Tecno, Redmi, Sparx and entry-level Vivo or Samsung models. Use the Under 20K or 20K–30K price filters on MobileZone."}}
 ]}
@@ -260,8 +260,10 @@ body.dark footer{background:#020617}
       <a href="#prices">By Price</a>
       <a href="#finder">Finder</a>
       <a href="#guide">Guide</a>
+      <a href="/compare-mobiles">Compare</a>
     </nav>
     <div class="nav-right">
+      <button class="icon-btn nav-toggle" id="navToggle" title="Menu" aria-label="Open menu" aria-expanded="false">☰</button>
       <button class="icon-btn" id="darkBtn" title="Dark mode" aria-label="Toggle dark mode">◐</button>
     </div>
   </div>
@@ -334,25 +336,53 @@ body.dark footer{background:#020617}
       <!-- PTA Tax Calculator -->
       <div class="tool-card">
         <h3>💰 PTA Tax Calculator</h3>
-        <p>Grey phone la rahe ho? Tax + total cost instantly nikaalo. (Approximate rates 2026)</p>
+        <p>Estimate the DIRBS registration duty for an imported phone. Component rates: FBR FY 2026-27 structure, in force 1 July 2026. Estimate only — DIRBS shows the exact figure for your IMEI.</p>
+        <label>Phone (optional — picks its price)</label>
+        <select id="ptaPhone"><option value="">Custom price (enter below)</option></select>
         <div class="row">
           <div>
             <label>Phone Price</label>
-            <input type="number" id="ptaPrice" placeholder="e.g. 450" min="1">
+            <input type="number" id="ptaPrice" placeholder="e.g. 168000" min="1">
           </div>
           <div>
             <label>Currency</label>
             <select id="ptaCurr">
-              <option value="usd">USD ($)</option>
               <option value="pkr">PKR (Rs)</option>
+              <option value="usd">USD ($)</option>
             </select>
           </div>
         </div>
-        <label>Category</label>
-        <select id="ptaCat">
-          <option value="smart">Smartphone (most phones)</option>
-          <option value="feature">Feature / Button phone</option>
-        </select>
+        <div class="row">
+          <div>
+            <label>USD → PKR rate (editable)</label>
+            <input type="number" id="ptaRate" value="280" min="1" step="0.01">
+          </div>
+          <div>
+            <label>Category</label>
+            <select id="ptaCat">
+              <option value="smart">Smartphone (most phones)</option>
+              <option value="feature">Feature / Button phone (+ Rs 250 customs duty)</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>Registration route</label>
+            <select id="ptaRoute">
+              <option value="passport">Passport (traveller / overseas)</option>
+              <option value="cnic">CNIC (resident)</option>
+            </select>
+          </div>
+          <div>
+            <label>Filer status (CNIC only)</label>
+            <select id="ptaFiler">
+              <option value="atl">ATL filer</option>
+              <option value="nonatl">Non-ATL — income tax doubles</option>
+            </select>
+          </div>
+        </div>
+        <label>IMEI (optional — never sent or stored)</label>
+        <input type="text" id="ptaImei" placeholder="15-digit IMEI, dial *#06# to find it" maxlength="15" inputmode="numeric">
         <button type="button" class="btn view" style="width:100%;margin-top:4px;padding:11px" onclick="calcPTA()">Calculate PTA Tax</button>
         <div id="ptaResult" class="calc-result" style="display:none"></div>
       </div>
@@ -360,7 +390,7 @@ body.dark footer{background:#020617}
       <!-- Smart Recommendation Quiz -->
       <div class="tool-card">
         <h3>🎯 Smart Phone Finder</h3>
-        <p>Budget + priority batao — best 3 phones recommend karenge.</p>
+        <p>Pick a budget and a priority — we recommend the best 3 phones.</p>
         <label>Your Budget (PKR)</label>
         <select id="quizBudget">
           <option value="20000">Under 20,000</option>
@@ -466,6 +496,15 @@ body.dark footer{background:#020617}
         <div><label for="network">Network</label>
           <select id="network"><option value="">Any</option><option value="yes">5G</option><option value="no">4G only</option></select>
         </div>
+        <div><label for="storage">Storage</label>
+          <select id="storage"><option value="">Any</option></select>
+        </div>
+        <div><label for="battery">Battery</label>
+          <select id="battery"><option value="">Any</option></select>
+        </div>
+        <div><label for="camera">Camera</label>
+          <select id="camera"><option value="">Any</option></select>
+        </div>
       </div>
       <div id="count" class="count"></div>
     </div>
@@ -521,7 +560,7 @@ body.dark footer{background:#020617}
       </details>
       <details>
         <summary>How to calculate PTA tax on a mobile phone in Pakistan?</summary>
-        <div class="ans">Use the PTA Tax Calculator on this page: enter price in USD or PKR, select smartphone, and get an estimated tax + total cost. For the official payable amount, always verify on the PTA DIRBS portal before activating a grey phone.</div>
+        <div class="ans">Use the PTA Tax Calculator on this page: pick a phone or enter its price, choose Passport or CNIC registration and your filer status, and get an estimated breakdown (regulatory duty, sales tax, handset levy, income tax). For the official payable amount, always check your IMEI on the PTA DIRBS portal before paying.</div>
       </details>
       <details>
         <summary>What is the best phone under 30000 in Pakistan?</summary>
@@ -663,103 +702,103 @@ const phones=[
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
 const infinixArchive=[
-{b:"Infinix",m:"Hot Note",p:0,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot Note Pro",p:0,r:"2GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Note 2",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Zero 3",p:0,r:"3GB",s:"16GB",c:"20MP",bat:"3030mAh",g:"no"},
+{b:"Infinix",m:"Hot Note",p:12900,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot Note Pro",p:13900,r:"2GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Note 2",p:16999,r:"2GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Zero 3",p:20899,r:"3GB",s:"16GB",c:"20MP",bat:"3030mAh",g:"no"},
 {b:"Infinix",m:"Hot",p:0,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
 {b:"Infinix",m:"Zero",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"3200mAh",g:"no"},
-{b:"Infinix",m:"Zero 2",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"2300mAh",g:"no"},
-{b:"Infinix",m:"Zero 2 Lite",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"2300mAh",g:"no"},
-{b:"Infinix",m:"Hot Note 32GB",p:0,r:"2GB",s:"32GB",c:"8MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Zero 2 32GB",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"2300mAh",g:"no"},
-{b:"Infinix",m:"Hot 3",p:0,r:"2GB",s:"16GB",c:"8MP",bat:"3000mAh",g:"no"},
-{b:"Infinix",m:"Hot S",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"3000mAh",g:"no"},
-{b:"Infinix",m:"Hot 3 Pro",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"3000mAh",g:"no"},
-{b:"Infinix",m:"Note 3",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Note 3 Pro",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Hot 4",p:0,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Note 3 4G",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Zero 4",p:0,r:"4GB",s:"32GB",c:"16MP",bat:"3200mAh",g:"no"},
-{b:"Infinix",m:"Zero 4 Plus",p:0,r:"4GB",s:"32GB",c:"20.7MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 4 Pro",p:0,r:"3GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"S2",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"3000mAh",g:"no"},
-{b:"Infinix",m:"S2 Pro",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"3000mAh",g:"no"},
-{b:"Infinix",m:"Note 4",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4300mAh",g:"no"},
-{b:"Infinix",m:"Note 4 Pro",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Smart",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"3060mAh",g:"no"},
-{b:"Infinix",m:"Hot 5",p:0,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 5 Lite",p:0,r:"1GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot S3",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot S3 4GB",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot S3X",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot S3X 4GB",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Note 5",p:0,r:"3GB",s:"32GB",c:"12MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Note 5 Stylus",p:0,r:"4GB",s:"64GB",c:"16MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Smart 2",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"3050mAh",g:"no"},
-{b:"Infinix",m:"Smart 2 32GB",p:0,r:"2GB",s:"32GB",c:"13MP",bat:"3050mAh",g:"no"},
-{b:"Infinix",m:"Smart 2 HD",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"3500mAh",g:"no"},
-{b:"Infinix",m:"Hot 6",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 6 Pro",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 6X",p:0,r:"2GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 7",p:0,r:"2GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 7 Pro",p:0,r:"6GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Smart 3",p:0,r:"2GB",s:"32GB",c:"13MP",bat:"3500mAh",g:"no"},
-{b:"Infinix",m:"Smart 3 Plus",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"3500mAh",g:"no"},
-{b:"Infinix",m:"S4",p:0,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"S4 6GB",p:0,r:"6GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Zero 2",p:18900,r:"3GB",s:"32GB",c:"13MP",bat:"2300mAh",g:"no"},
+{b:"Infinix",m:"Zero 2 Lite",p:16800,r:"2GB",s:"16GB",c:"13MP",bat:"2300mAh",g:"no"},
+{b:"Infinix",m:"Hot Note 32GB",p:12600,r:"2GB",s:"32GB",c:"8MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Zero 2 32GB",p:17800,r:"3GB",s:"32GB",c:"13MP",bat:"2300mAh",g:"no"},
+{b:"Infinix",m:"Hot 3",p:9999,r:"2GB",s:"16GB",c:"8MP",bat:"3000mAh",g:"no"},
+{b:"Infinix",m:"Hot S",p:14300,r:"3GB",s:"32GB",c:"13MP",bat:"3000mAh",g:"no"},
+{b:"Infinix",m:"Hot 3 Pro",p:14599,r:"2GB",s:"16GB",c:"13MP",bat:"3000mAh",g:"no"},
+{b:"Infinix",m:"Note 3",p:18599,r:"2GB",s:"16GB",c:"13MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Note 3 Pro",p:20599,r:"3GB",s:"32GB",c:"13MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Hot 4",p:12999,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Note 3 4G",p:19800,r:"3GB",s:"32GB",c:"13MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Zero 4",p:19999,r:"4GB",s:"32GB",c:"16MP",bat:"3200mAh",g:"no"},
+{b:"Infinix",m:"Zero 4 Plus",p:26499,r:"4GB",s:"32GB",c:"20.7MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 4 Pro",p:16400,r:"3GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"S2",p:15499,r:"2GB",s:"16GB",c:"13MP",bat:"3000mAh",g:"no"},
+{b:"Infinix",m:"S2 Pro",p:15999,r:"3GB",s:"32GB",c:"13MP",bat:"3000mAh",g:"no"},
+{b:"Infinix",m:"Note 4",p:18999,r:"3GB",s:"32GB",c:"13MP",bat:"4300mAh",g:"no"},
+{b:"Infinix",m:"Note 4 Pro",p:26400,r:"3GB",s:"32GB",c:"13MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Smart",p:9799,r:"2GB",s:"16GB",c:"13MP",bat:"3060mAh",g:"no"},
+{b:"Infinix",m:"Hot 5",p:13499,r:"2GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 5 Lite",p:13500,r:"1GB",s:"16GB",c:"8MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot S3",p:18999,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot S3 4GB",p:25999,r:"4GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot S3X",p:19600,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot S3X 4GB",p:23000,r:"4GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Note 5",p:32999,r:"3GB",s:"32GB",c:"12MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Note 5 Stylus",p:37899,r:"4GB",s:"64GB",c:"16MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Smart 2",p:11999,r:"2GB",s:"16GB",c:"13MP",bat:"3050mAh",g:"no"},
+{b:"Infinix",m:"Smart 2 32GB",p:19500,r:"2GB",s:"32GB",c:"13MP",bat:"3050mAh",g:"no"},
+{b:"Infinix",m:"Smart 2 HD",p:10999,r:"2GB",s:"16GB",c:"13MP",bat:"3500mAh",g:"no"},
+{b:"Infinix",m:"Hot 6",p:13499,r:"2GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 6 Pro",p:18999,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 6X",p:23500,r:"2GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 7",p:14999,r:"2GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 7 Pro",p:19999,r:"6GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Smart 3",p:11999,r:"2GB",s:"32GB",c:"13MP",bat:"3500mAh",g:"no"},
+{b:"Infinix",m:"Smart 3 Plus",p:15999,r:"3GB",s:"32GB",c:"13MP",bat:"3500mAh",g:"no"},
+{b:"Infinix",m:"S4",p:23500,r:"3GB",s:"32GB",c:"13MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"S4 6GB",p:25499,r:"6GB",s:"64GB",c:"13MP",bat:"4000mAh",g:"no"},
 {b:"Infinix",m:"S4 16GB",p:0,r:"3GB",s:"16GB",c:"13MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"S5",p:0,r:"4GB",s:"64GB",c:"16MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"S5 Pro",p:0,r:"6GB",s:"128GB",c:"48MP",bat:"4000mAh",g:"no"},
-{b:"Infinix",m:"Hot 8",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Hot 9",p:0,r:"4GB",s:"64GB",c:"16MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Hot 9 Pro",p:0,r:"4GB",s:"64GB",c:"48MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 7",p:0,r:"4GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 7 Lite",p:0,r:"4GB",s:"64GB",c:"48MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Zero 8",p:0,r:"8GB",s:"128GB",c:"64MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Zero 8i",p:0,r:"8GB",s:"128GB",c:"48MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"S5",p:20999,r:"4GB",s:"64GB",c:"16MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"S5 Pro",p:23499,r:"6GB",s:"128GB",c:"48MP",bat:"4000mAh",g:"no"},
+{b:"Infinix",m:"Hot 8",p:16999,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Hot 9",p:17499,r:"4GB",s:"64GB",c:"16MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Hot 9 Pro",p:23499,r:"4GB",s:"64GB",c:"48MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 7",p:26999,r:"4GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 7 Lite",p:21999,r:"4GB",s:"64GB",c:"48MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Zero 8",p:39999,r:"8GB",s:"128GB",c:"64MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Zero 8i",p:34999,r:"8GB",s:"128GB",c:"48MP",bat:"4500mAh",g:"no"},
 {b:"Infinix",m:"Zero 10",p:0,r:"8GB",s:"128GB",c:"48MP",bat:"4350mAh",g:"no"},
-{b:"Infinix",m:"Hot 10",p:0,r:"4GB",s:"64GB",c:"16MP",bat:"5200mAh",g:"no"},
-{b:"Infinix",m:"Hot 10S",p:0,r:"6GB",s:"128GB",c:"48MP",bat:"6000mAh",g:"no"},
+{b:"Infinix",m:"Hot 10",p:20999,r:"4GB",s:"64GB",c:"16MP",bat:"5200mAh",g:"no"},
+{b:"Infinix",m:"Hot 10S",p:25499,r:"6GB",s:"128GB",c:"48MP",bat:"6000mAh",g:"no"},
 {b:"Infinix",m:"Hot 10T",p:0,r:"4GB",s:"64GB",c:"48MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Hot 10S NFC",p:0,r:"6GB",s:"128GB",c:"48MP",bat:"6000mAh",g:"no"},
-{b:"Infinix",m:"Smart 5",p:0,r:"2GB",s:"32GB",c:"13MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Hot 10S NFC",p:23999,r:"6GB",s:"128GB",c:"48MP",bat:"6000mAh",g:"no"},
+{b:"Infinix",m:"Smart 5",p:15999,r:"2GB",s:"32GB",c:"13MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Smart 5A",p:0,r:"2GB",s:"32GB",c:"8MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 8",p:0,r:"6GB",s:"128GB",c:"64MP",bat:"5200mAh",g:"no"},
-{b:"Infinix",m:"Note 8i",p:0,r:"6GB",s:"128GB",c:"48MP",bat:"5200mAh",g:"no"},
-{b:"Infinix",m:"Note 10",p:0,r:"4GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 10 Pro",p:0,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 11",p:0,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 11 Pro",p:0,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 8",p:29999,r:"6GB",s:"128GB",c:"64MP",bat:"5200mAh",g:"no"},
+{b:"Infinix",m:"Note 8i",p:26999,r:"6GB",s:"128GB",c:"48MP",bat:"5200mAh",g:"no"},
+{b:"Infinix",m:"Note 10",p:27999,r:"4GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 10 Pro",p:37999,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 11",p:28999,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 11 Pro",p:35999,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Note 11 Pro NFC",p:0,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Note 11i",p:0,r:"4GB",s:"64GB",c:"48MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Hot 11",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"5200mAh",g:"no"},
-{b:"Infinix",m:"Hot 11 Play",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"6000mAh",g:"no"},
+{b:"Infinix",m:"Hot 11",p:21999,r:"4GB",s:"64GB",c:"13MP",bat:"5200mAh",g:"no"},
+{b:"Infinix",m:"Hot 11 Play",p:39999,r:"4GB",s:"64GB",c:"13MP",bat:"6000mAh",g:"no"},
 {b:"Infinix",m:"Hot 11 2022",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Hot 11 Pro",p:0,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 12",p:0,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Hot 11 Pro",p:39999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
+{b:"Infinix",m:"Note 12",p:54999,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Note 12 G96",p:0,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Note 12 Pro",p:0,r:"8GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Note 12 5G",p:0,r:"6GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"yes",img:"infinix-note-12-5g.webp"},
-{b:"Infinix",m:"Note 12i",p:0,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no",img:"infinix-note-12i.webp"},
+{b:"Infinix",m:"Note 12 5G",p:49999,r:"6GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"yes",img:"infinix-note-12-5g.webp"},
+{b:"Infinix",m:"Note 12i",p:32999,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no",img:"infinix-note-12i.webp"},
 {b:"Infinix",m:"Note 12i 2022",p:0,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Hot 12",p:0,r:"6GB",s:"128GB",c:"13MP",bat:"5000mAh",g:"no",img:"infinix-hot-12.webp"},
-{b:"Infinix",m:"Hot 12 Play",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"6000mAh",g:"no",img:"infinix-hot-12-play.webp"},
+{b:"Infinix",m:"Hot 12",p:44999,r:"6GB",s:"128GB",c:"13MP",bat:"5000mAh",g:"no",img:"infinix-hot-12.webp"},
+{b:"Infinix",m:"Hot 12 Play",p:36999,r:"4GB",s:"64GB",c:"13MP",bat:"6000mAh",g:"no",img:"infinix-hot-12-play.webp"},
 {b:"Infinix",m:"Hot 12 Play NFC",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"6000mAh",g:"no"},
 {b:"Infinix",m:"Hot 12 Pro",p:0,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
 {b:"Infinix",m:"Hot 20",p:0,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes"},
-{b:"Infinix",m:"Hot 20i",p:0,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no",img:"infinix-hot-20i.webp"},
+{b:"Infinix",m:"Hot 20i",p:37999,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no",img:"infinix-hot-20i.webp"},
 {b:"Infinix",m:"Hot 20 Play",p:0,r:"4GB",s:"128GB",c:"13MP",bat:"6000mAh",g:"no"},
 {b:"Infinix",m:"Hot 20s",p:0,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no"},
-{b:"Infinix",m:"Zero 5G",p:0,r:"8GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"yes"},
-{b:"Infinix",m:"Zero 5G 2023",p:0,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"infinix-zero-5g-2023.webp"},
-{b:"Infinix",m:"Zero 20",p:0,r:"8GB",s:"256GB",c:"108MP",bat:"4500mAh",g:"yes",img:"infinix-zero-20.webp"},
+{b:"Infinix",m:"Zero 5G",p:49999,r:"8GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"yes"},
+{b:"Infinix",m:"Zero 5G 2023",p:54999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"infinix-zero-5g-2023.webp"},
+{b:"Infinix",m:"Zero 20",p:79999,r:"8GB",s:"256GB",c:"108MP",bat:"4500mAh",g:"yes",img:"infinix-zero-20.webp"},
 {b:"Infinix",m:"Zero Ultra",p:0,r:"8GB",s:"256GB",c:"200MP",bat:"4500mAh",g:"yes"},
-{b:"Infinix",m:"Zero X",p:0,r:"8GB",s:"128GB",c:"64MP",bat:"4700mAh",g:"no"},
-{b:"Infinix",m:"Zero X Pro",p:0,r:"8GB",s:"128GB",c:"108MP",bat:"4500mAh",g:"no"},
-{b:"Infinix",m:"Zero X Neo",p:0,r:"8GB",s:"128GB",c:"48MP",bat:"4500mAh",g:"no"}
+{b:"Infinix",m:"Zero X",p:41999,r:"8GB",s:"128GB",c:"64MP",bat:"4700mAh",g:"no"},
+{b:"Infinix",m:"Zero X Pro",p:49999,r:"8GB",s:"128GB",c:"108MP",bat:"4500mAh",g:"no"},
+{b:"Infinix",m:"Zero X Neo",p:34999,r:"8GB",s:"128GB",c:"48MP",bat:"4500mAh",g:"no"}
 ];
-phones.push(...infinixArchive.filter(a=>!phones.some(x=>x.b===a.b&&x.m===a.m)));
+const pricedCatalogue=phones.slice();phones.push(...infinixArchive.filter(a=>!phones.some(x=>x.b===a.b&&x.m===a.m)));
 
 const latestPhones=phones.filter(x=>x.n===1);
 
@@ -836,6 +875,7 @@ function phoneSVG(x){
   </g>
 </svg>`);
 }
+let compareSel=[];
 function card(x){
   const name=x.b+" "+x.m;
   const url="/"+slug(name)+"-price-pakistan";
@@ -844,7 +884,7 @@ function card(x){
     <div class="pic">
       ${x.img?`<a href="${url}"><img loading="lazy" decoding="async" width="400" height="480" alt="${name} price in Pakistan" src="images/${x.img}"></a>`:`<a href="${url}"><div class="coming-soon">Coming Soon</div></a>`}
       ${x.g==="yes"?'<span class="badge">5G</span>':""}
-      <span class="vscore" title="Value Score">★ ${vs}</span>
+      ${x.p>0?`<span class="vscore" title="Value Score">★ ${vs}</span>`:""}
     </div>
     <div class="body">
       <div class="brand">${x.b}${x.e?' <span class="exp-pill">Expected</span>':''}</div>
@@ -853,6 +893,7 @@ function card(x){
       <div class="meta">${x.r} • ${x.s}<br>${x.c} • ${x.bat}</div>
       <div class="buttons">
         <button type="button" class="btn view" style="flex:1" onclick='openSpec(${JSON.stringify({b:x.b,m:x.m,p:x.p,r:x.r,s:x.s,c:x.c,bat:x.bat,g:x.g,img:x.img,e:x.e})})'>Specifications</button>
+        <button type="button" class="btn compare-btn" style="flex:1">＋ Compare</button>
       </div>
     </div>
   </article>`;
@@ -860,6 +901,7 @@ function card(x){
 
 function render(list,id){
   document.getElementById(id).innerHTML=list.length?list.map(card).join(""):'<div class="empty">No phones found. Try different filters.</div>';
+  syncCompareBtns();
 }
 
 /* Main page = only new/incoming (32). Full catalog via Brands + Finder */
@@ -878,25 +920,31 @@ document.getElementById("heroStatModels").textContent=phones.length;
 document.getElementById("heroStatPriced").textContent=phones.filter(x=>x.p>0).length;
 document.getElementById("heroStatPhotos").textContent=phones.filter(x=>x.img).length;
 /* Budget guide: priced models Rs 50,000 and under, cheapest first */
-const budget50list=phones.filter(x=>x.p>0&&x.p<=50000).sort((a,b)=>a.p-b.p);
+const budget50list=pricedCatalogue.filter(x=>x.p>0&&x.p<=50000).sort((a,b)=>a.p-b.p);
 render(budget50list,"budget50");
 document.getElementById("budget50info").textContent=budget50list.length+" phones \u00b7 Prices updated: "+PRICE_UPDATED;
 
 const brands=[...new Set(phones.map(x=>x.b))].sort();
 brands.forEach(b=>brand.insertAdjacentHTML("beforeend",`<option value="${b}">${b}</option>`));
+const numVal=v=>{const m=v.match(/([\d.]+)\s*(TB|GB|mAh|MP)/);return m?parseFloat(m[1])*(m[2]==="TB"?1024:1):0};
+[["storage","s"],["battery","bat"],["camera","c"]].forEach(([id,key])=>{
+  [...new Set(phones.map(x=>x[key]))].sort((a,b)=>numVal(a)-numVal(b)).forEach(v=>{
+    document.getElementById(id).insertAdjacentHTML("beforeend",`<option>${v}</option>`);
+  });
+});
 const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",Realme:"realme-mobile-prices",Itel:"itel-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices"};
 brandsGrid.innerHTML=brands.map(b=>{
-  const cnt=phones.filter(x=>x.b===b).length;
+  const cnt=phones.filter(x=>x.b===b&&x.p>0).length;
   return `<a class="brandbox" href="/${brandPage[b]}">${b}<small style="display:block;color:var(--m);font-size:10px;font-weight:500;margin-top:2px">${cnt} models</small></a>`;
 }).join("");
 
 function filter(){
-  let list=phones.filter(x=>(!brand.value||x.b===brand.value)&&(!ram.value||x.r===ram.value)&&(!network.value||x.g===network.value));
+  let list=phones.filter(x=>(!brand.value||x.b===brand.value)&&(!ram.value||x.r===ram.value)&&(!network.value||x.g===network.value)&&(!storage.value||x.s===storage.value)&&(!battery.value||x.bat===battery.value)&&(!camera.value||x.c===camera.value));
   if(price.value){const[a,z]=price.value.split("-").map(Number);list=list.filter(x=>x.p>0&&x.p>=a&&x.p<=z)}
   count.textContent=list.length+" matching (full catalog)";
   render(list,"results");
 }
-["brand","price","ram","network"].forEach(id=>document.getElementById(id).onchange=filter);
+["brand","price","ram","network","storage","battery","camera"].forEach(id=>document.getElementById(id).onchange=filter);
 filter();
 
 function searchNow(q){
@@ -923,32 +971,53 @@ document.querySelectorAll(".pricebox").forEach(x=>x.onclick=()=>{
 });
 
 /* ========== UNIQUE: PTA Tax Calculator ========== */
+/* Component rates, FY 2026-27 structure in force 1 July 2026 (SRO 1064(I)/2026).
+   Customs value bands in USD. Sales tax: 18% up to $500, 25% above. Income tax: CNIC only,
+   doubled for non-ATL. Handset levy: Finance Act 2018 s.10. Smartphones: no base customs duty. */
+const PTA_BANDS=[
+  {max:30,rd:240,st:0.18,it:100,levy:100},
+  {max:100,rd:2400,st:0.18,it:100,levy:200},
+  {max:200,rd:6000,st:0.18,it:100,levy:200},
+  {max:350,rd:8800,st:0.18,it:970,levy:1800},
+  {max:500,rd:12000,st:0.18,it:5000,levy:4000},
+  {max:700,rd:17600,st:0.25,it:11500,levy:8000},
+  {max:Infinity,rd:17600,st:0.25,it:11500,levy:16000},
+];
+phones.filter(x=>x.p>0).forEach(x=>document.getElementById("ptaPhone").insertAdjacentHTML("beforeend",`<option value="${x.p}">${x.b} ${x.m} — ${money(x.p)}</option>`));
+document.getElementById("ptaPhone").onchange=()=>{const v=document.getElementById("ptaPhone").value;if(v){document.getElementById("ptaPrice").value=v;document.getElementById("ptaCurr").value="pkr";}};
 function calcPTA(){
   const price=parseFloat(document.getElementById("ptaPrice").value);
   const curr=document.getElementById("ptaCurr").value;
   const cat=document.getElementById("ptaCat").value;
+  const route=document.getElementById("ptaRoute").value;
+  const filer=document.getElementById("ptaFiler").value;
+  const rate=parseFloat(document.getElementById("ptaRate").value)||280;
+  const imei=(document.getElementById("ptaImei").value||"").replace(/\D/g,"");
   const box=document.getElementById("ptaResult");
   if(!price||price<=0){box.style.display="block";box.innerHTML="Please enter a valid price.";return}
-  const rate=280; // approx USD to PKR (update as needed)
-  let pkr=curr==="usd"?price*rate:price;
-  // Simplified PTA slab approximation (smartphones)
-  let tax=0;
-  if(cat==="feature"){
-    tax=pkr<10000?500:pkr*0.05;
-  }else{
-    // Rough smartphone PTA approximation
-    if(pkr<=20000) tax=Math.round(pkr*0.15);
-    else if(pkr<=50000) tax=Math.round(pkr*0.25);
-    else if(pkr<=100000) tax=Math.round(pkr*0.35);
-    else tax=Math.round(pkr*0.45);
-    tax=Math.max(tax,2500);
+  const pkr=Math.round(curr==="usd"?price*rate:price);
+  const usd=pkr/rate;
+  const band=PTA_BANDS.find(b=>usd<=b.max);
+  const stax=Math.round(pkr*band.st);
+  const itax=route==="cnic"?band.it*(filer==="nonatl"?2:1):0;
+  const cduty=cat==="feature"?250:0;
+  const total=band.rd+stax+band.levy+itax+cduty;
+  const fine=Math.round((band.rd+stax+band.levy+itax)*0.10);
+  let imeiNote="";
+  if(imei){
+    imeiNote=imei.length===15
+      ?`<br><small style="color:var(--m)">IMEI looks valid (15 digits). Check it free: SMS the IMEI to <strong>8484</strong> or visit <a href="https://dirbs.pta.gov.pk/" target="_blank" rel="noopener noreferrer">dirbs.pta.gov.pk</a>. This page does not send or store your IMEI.</small>`
+      :`<br><small style="color:var(--m)">IMEI should be 15 digits (dial *#06# to find it). It is not sent or stored anywhere.</small>`;
   }
-  const total=Math.round(pkr+tax);
   box.style.display="block";
-  box.innerHTML=`Phone value: <strong>${money(Math.round(pkr))}</strong><br>
-    Est. PTA Tax: <strong>${money(tax)}</strong><br>
-    <strong style="font-size:17px">Total landing cost ≈ ${money(total)}</strong><br>
-    <small style="color:var(--m)">Estimate only — slabs are approximate, not official PTA/FBR rates. Final payable duties and taxes should be confirmed through the official applicable government/PTA process.</small>`;
+  box.innerHTML=`Customs value band: <strong>${band.max===Infinity?"Above $700":"Up to $"+band.max}</strong> (approx. $${usd.toFixed(0)} at Rs ${rate}/$)<br>
+    Regulatory duty (SRO 1064(I)/2026): <strong>${money(band.rd)}</strong><br>
+    Sales tax (${Math.round(band.st*100)}% of value): <strong>${money(stax)}</strong><br>
+    Mobile handset levy: <strong>${money(band.levy)}</strong><br>
+    ${route==="cnic"?`Income tax (Sec. 148${filer==="nonatl"?" — non-ATL, doubled":""}): <strong>${money(itax)}</strong><br>`:`Income tax: <strong>Exempt on passport route</strong><br>`}
+    ${cduty?`Customs duty (feature phone): <strong>${money(cduty)}</strong><br>`:""}
+    <strong style="font-size:17px">Estimated total ≈ ${money(total)}</strong><br>
+    <small style="color:var(--m)">Possible 10% fine (SRO 50(I)/2019) on late/CNIC registration, if DIRBS applies it: ${money(fine)} — not included above. Overseas Pakistanis may register one device per year tax-free on passport if eligible — DIRBS confirms eligibility. Estimate only — the duty is charged on FBR's official customs value for the model, which may differ from the price entered here. Final payable duties and taxes should be confirmed through the official applicable government/PTA process: check your IMEI on DIRBS (dirbs.pta.gov.pk) or SMS it to 8484 before paying. This tool is not an official PTA tool.</small>${imeiNote}`;
 }
 
 /* ========== UNIQUE: Smart Quiz ========== */
@@ -1001,6 +1070,18 @@ document.getElementById("darkBtn").onclick=()=>{
   document.body.classList.toggle("dark");
   localStorage.setItem("mz-dark",document.body.classList.contains("dark")?"1":"0");
 };
+document.getElementById("navToggle").onclick=()=>{
+  const nav=document.querySelector(".links");
+  const open=nav.classList.toggle("open");
+  const btn=document.getElementById("navToggle");
+  btn.setAttribute("aria-expanded",open?"true":"false");
+  btn.setAttribute("aria-label",open?"Close menu":"Open menu");
+};
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>{
+  document.querySelector(".links").classList.remove("open");
+  document.getElementById("navToggle").setAttribute("aria-expanded","false");
+  document.getElementById("navToggle").setAttribute("aria-label","Open menu");
+}));
 if(localStorage.getItem("mz-dark")==="1") document.body.classList.add("dark");
 
 document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap"))suggestions.style.display="none"});
@@ -1201,6 +1282,51 @@ function closeSpec(){
   document.body.style.overflow="";
 }
 document.addEventListener("keydown",e=>{if(e.key==="Escape") closeSpec()});
+
+/* ========== Compare (max 3, facts only, no winner) ========== */
+let compareBarEl=null;
+function compareBar(){
+  if(!compareBarEl){
+    document.body.insertAdjacentHTML("beforeend",`<div id="compareBar" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:100;background:#101828;color:#fff;padding:12px 16px;box-shadow:0 -2px 12px rgba(0,0,0,.25)"><div style="max-width:1160px;margin:0 auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span id="compareBarText" style="font-weight:700;font-size:14px"></span><span style="flex:1"></span><button type="button" id="compareGo" style="background:#155eef;color:#fff;border:0;border-radius:9px;padding:9px 16px;font-weight:700;cursor:pointer">Compare now →</button><button type="button" id="compareClear" style="background:transparent;color:#fff;border:1px solid #667085;border-radius:9px;padding:9px 14px;font-weight:700;cursor:pointer">Clear</button></div></div>`);
+    compareBarEl=document.getElementById("compareBar");
+    document.getElementById("compareGo").onclick=()=>{
+      const slugs=compareSel.map(x=>slug(x.b+" "+x.m)+"-price-pakistan");
+      location.href="/compare-mobiles?phones="+slugs.join(",");
+    };
+    document.getElementById("compareClear").onclick=()=>{compareSel=[];syncCompareBtns();updateCompareBar();};
+  }
+  return compareBarEl;
+}
+function updateCompareBar(){
+  const bar=compareBar();
+  if(!compareSel.length){bar.style.display="none";document.body.style.paddingBottom="";return}
+  bar.style.display="block";
+  document.body.style.paddingBottom=(bar.offsetHeight+12)+"px";
+  document.getElementById("compareBarText").textContent=compareSel.map(x=>x.b+" "+x.m).join("  ×  ")+"  ("+compareSel.length+"/3)";
+}
+function syncCompareBtns(){
+  document.querySelectorAll(".compare-btn").forEach(btn=>{
+    const a=btn.closest("article");
+    const on=a&&compareSel.some(x=>x.b===a.dataset.b&&x.m===a.dataset.m);
+    btn.textContent=on?"✓ Added":"＋ Compare";
+    btn.style.background=on?"var(--b)":"";btn.style.color=on?"#fff":"";
+  });
+}
+function toggleCompare(b,m){
+  const i=compareSel.findIndex(x=>x.b===b&&x.m===m);
+  if(i>=0) compareSel.splice(i,1);
+  else{
+    if(compareSel.length>=3){updateCompareBar();document.getElementById("compareBarText").textContent+=" — max 3 phones";return}
+    compareSel.push({b,m});
+  }
+  syncCompareBtns();updateCompareBar();
+}
+document.addEventListener("click",e=>{
+  const btn=e.target.closest(".compare-btn");
+  if(!btn)return;
+  const a=btn.closest("article");
+  if(a) toggleCompare(a.dataset.b,a.dataset.m);
+});
 </script>
 </body>
 </html>

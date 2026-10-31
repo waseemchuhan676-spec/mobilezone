@@ -45,3 +45,7 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 - Latest phones: /latest-mobile-phones
 - Individual phone pages: /<brand>-<model>-price-pakistan (82 live-priced models in wave 1)
 - Phone pages show confirmed specs only (price, RAM, storage, camera, battery, 5G). Display, processor, charging, dimensions, PTA status and warranty are marked as not confirmed where unverified — never estimated.
+
+- Compare tool: /compare-mobiles (pick up to 3 phones, side-by-side price/RAM/storage/camera/battery/5G; no winner declared; prices approximate)
+- PTA Tax Calculator (homepage tools): FY 2026-27 component structure (SRO 1064(I)/2026) — regulatory duty + sales tax (18% up to $500, 25% above) + handset levy + income tax (CNIC only, doubled for non-ATL); passport route exempt from income tax. Estimate only — DIRBS (dirbs.pta.gov.pk) shows the exact figure for an IMEI. IMEI input is never sent or stored.
+- Phone Finder (homepage): filters for brand, price, RAM, storage, battery, camera and 5G — all from confirmed catalogue data only.
