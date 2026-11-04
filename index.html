@@ -187,6 +187,9 @@ body.dark footer{background:#020617}
 .spec-back-btn{border:1.5px solid var(--line);background:var(--white);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer;color:var(--t)}
 .spec-back-btn:hover{border-color:var(--b);color:var(--b)}
 .spec-page-inner{max-width:960px;margin:0 auto;padding:24px 16px 40px}
+.spec-page .sp-hero{margin-bottom:24px}
+.spec-page .sp-main-card{cursor:pointer}
+.spec-page .sp-pic-btn{cursor:pointer}
 .spec-hero{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start;margin-bottom:24px}
 .spec-visual{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 20px;text-align:center}.spec-photo{width:100%;max-height:280px;object-fit:contain;filter:drop-shadow(0 10px 20px rgba(16,24,40,.20))}
 .spec-devices{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -1102,9 +1105,8 @@ function specExtras(x){
 
 /* ========== Full-page Specifications ========== */
 function openSpec(x){
-  const accent=brandColor[x.b]||"#155eef";
   const vs=valueScore(x);
-  const short=x.m.length>16?x.m.slice(0,15)+"…":x.m;
+  const modelUrl="/"+slug(x.b+" "+x.m)+"-price-pakistan";
   const best=parseInt(x.c)>=100?"Camera-focused":parseInt(x.bat)>=6000?"Battery life":parseInt(x.r)>=12?"Performance":"Everyday use";
   const ex=specExtras(x);
 
@@ -1123,55 +1125,40 @@ function openSpec(x){
     seen.add(k); return true;
   }).sort((a,b)=>valueScore(b)-valueScore(a)).slice(0,6);
 
-  const relHtml=related.map(p=>`
-    <div class="rel-card" role="button" tabindex="0" onclick='openSpec(${JSON.stringify({b:p.b,m:p.m,p:p.p,r:p.r,s:p.s,c:p.c,bat:p.bat,g:p.g,img:p.img,e:p.e})})'>
-      ${p.img?`<img class="rel-pic" loading="lazy" decoding="async" alt="${p.b} ${p.m} price in Pakistan" src="images/${p.img}">`:``}
-      <div class="rb">${p.b}</div>
-      <div class="rm">${p.m}</div>
-      <div class="rp">${money(p.p)}</div>
-      <div class="rt">${p.r} · ${p.c} · ★ ${valueScore(p)}</div>
-    </div>`).join("");
+  const relHtml=related.map(p=>{
+    const pUrl="/"+slug(p.b+" "+p.m)+"-price-pakistan";
+    return `
+    <article class="card sp-rec">
+      <a class="sp-pic-btn" href="${pUrl}" aria-label="${p.b} ${p.m} price in Pakistan">${p.img?`<img class="ph-photo" loading="lazy" decoding="async" alt="${p.b} ${p.m} price in Pakistan" src="images/${p.img}">`:``}</a>
+      <div class="body">
+        <div class="brand">${p.b}${p.g==="yes"?` <span class="badge">5G</span>`:``}${p.e?` <span class="exp-pill">Expected</span>`:``}</div>
+        <div class="model"><a href="${pUrl}">${p.m}</a></div>
+        <div class="price">${money(p.p)}</div>
+        <div class="meta">${p.r} • ${p.s}<br>${p.c} • ${p.bat}</div>
+      </div>
+    </article>`;
+  }).join("");
 
   document.getElementById("specBody").innerHTML=`
-    <div class="spec-hero">
-      <div class="spec-visual">
-        ${x.img?`<img class="spec-photo" loading="lazy" decoding="async" alt="${x.b} ${x.m} price in Pakistan" src="images/${x.img}">`:``}
-        ${x.img?``:`<div class="coming-soon">Coming Soon</div>`}
-        <div class="spec-devices" style="display:none">
-          <div class="spec-phone">
-            <div class="spec-screen" style="background:linear-gradient(160deg,${accent} 0%,#0f172a 55%,#020617 100%)">
-              <div class="dot"></div>
-              <div class="tx">${x.b}<small>${short}</small></div>
-              <div class="hm"></div>
-            </div>
-          </div>
-          <div class="spec-phone bk">
-            <div class="spec-back-face">
-              <div class="spec-cams"><i></i><i></i><i></i><i></i></div>
-            </div>
-          </div>
+    <section class="sp-hero"><div class="sp-hero-inner">
+      <div class="sp-copy">
+        <h1>${x.b} ${x.m}</h1>
+        <div class="sp-price">${money(x.p)}</div>
+        <div class="sp-note">Prices updated: ${PRICE_UPDATED} · Approximate price — confirm at shop</div>
+        <div class="sp-chips">
+          <span class="sp-chip">RAM <b>${x.r}</b></span>
+          <span class="sp-chip">Storage <b>${x.s}</b></span>
+          <span class="sp-chip">Camera <b>${x.c}</b></span>
+          <span class="sp-chip">Battery <b>${x.bat}</b></span>
+          <span class="sp-chip">Network <b>${x.g==="yes"?"5G":"4G"}</b></span>
+          ${x.e?`<span class="sp-chip">Expected price</span>`:``}
         </div>
-        <p class="spec-cap">${x.img?`Official product photo`:`Photo coming soon`}</p>
+        <div style="margin-top:16px"><a class="sp-lb-link" href="${modelUrl}">Full specifications dekhein →</a></div>
       </div>
-      <div class="spec-info">
-        <div class="brand-l">${x.b}</div>
-        <h1>${x.m}</h1>
-        <div class="spec-price">${money(x.p)}</div>
-        <div class="spec-badges">
-          <span>★ Value ${vs}</span>
-          <span>${x.g==="yes"?"5G":"4G"}</span>
-          ${x.e?`<span>Expected price</span>`:``}
-          <span>${best}</span>
-          <span>${ex.refresh}</span>
-        </div>
-        <div class="spec-hl">
-          <div><strong>${x.r}</strong><small>RAM</small></div>
-          <div><strong>${x.s}</strong><small>ROM</small></div>
-          <div><strong>${x.c}</strong><small>Camera</small></div>
-          <div><strong>${x.bat}</strong><small>Battery</small></div>
-        </div>
-      </div>
-    </div>
+      <div class="sp-visual"><div class="sp-glow"></div><div class="sp-fan">
+        <a class="sp-main-card" href="${modelUrl}" aria-label="${x.b} ${x.m} price in Pakistan">${x.img?`<img loading="lazy" decoding="async" alt="${x.b} ${x.m} price in Pakistan" src="images/${x.img}">`:`<div style="height:150px;display:flex;align-items:center;justify-content:center;color:var(--m);font-weight:700">Photo coming soon</div>`}<b>${x.b} ${x.m}</b><span>${money(x.p)}</span></a>
+      </div></div>
+    </div></section>
 
     <div class="spec-block">
       <h2>Memory &amp; Storage</h2>
@@ -1240,7 +1227,7 @@ function openSpec(x){
       <h2>🔥 Related &amp; top picks for you</h2>
       <p class="spec-note" style="margin-top:0">Same brand + similar budget — compare karke best choose karo.</p>
       <div class="rel-grid">${relHtml||"<p class='spec-note'>No related models.</p>"}</div>
-      <p class="rel-cta">Tap any phone → <strong>full specifications</strong> instantly</p>
+      <p class="rel-cta">Name ya pic par click karein → us model ka <strong>full page</strong> khul jayega</p>
     </div>`;
   document.getElementById("specPage").classList.add("show");
   document.body.style.overflow="hidden";
