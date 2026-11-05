@@ -179,17 +179,6 @@ body.dark footer{background:#020617}
 @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.pricegrid,.brands,.usecase-grid{grid-template-columns:repeat(3,1fr)}.tools-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.links{display:none}.nav-toggle{display:flex}.links.open{display:flex;position:absolute;top:58px;left:0;right:0;flex-direction:column;background:var(--white);border-bottom:1px solid var(--line);padding:12px 16px;gap:12px;z-index:60}.hero-phones{display:grid;grid-template-columns:1fr 1fr;gap:10px;height:auto;max-width:100%}.hero-phone{position:static;width:auto;transform:none}.hero-phone img{height:120px}.hero-phone:hover{transform:scale(1.03)}.grid{grid-template-columns:repeat(2,1fr);gap:9px}.pic{height:175px}.filters{grid-template-columns:1fr 1fr}.head h2{font-size:18px}.hero{padding:24px 0 20px}.pricegrid,.brands,.usecase-grid{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:1fr}.tool-card .row{grid-template-columns:1fr}}
 @media(max-width:400px){.filters{grid-template-columns:1fr}}
-/* Full-page specifications view */
-.spec-page{display:none;position:fixed;inset:0;z-index:100;background:var(--bg);overflow-y:auto}
-.spec-page.show{display:block}
-.spec-page-nav{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--line);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
-.spec-page-nav .logo{font-size:18px;font-weight:900;color:var(--b)}
-.spec-back-btn{border:1.5px solid var(--line);background:var(--white);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer;color:var(--t)}
-.spec-back-btn:hover{border-color:var(--b);color:var(--b)}
-.spec-page-inner{max-width:960px;margin:0 auto;padding:24px 16px 40px}
-.spec-page .sp-hero{margin-bottom:24px}
-.spec-page .sp-main-card{cursor:pointer}
-.spec-page .sp-pic-btn{cursor:pointer}
 .spec-hero{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start;margin-bottom:24px}
 .spec-visual{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 20px;text-align:center}.spec-photo{width:100%;max-height:280px;object-fit:contain;filter:drop-shadow(0 10px 20px rgba(16,24,40,.20))}
 .spec-devices{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -614,15 +603,6 @@ body.dark footer{background:#020617}
   </div>
 </footer>
 
-<!-- Full-page specifications -->
-<div class="spec-page" id="specPage" role="dialog" aria-modal="true" aria-label="Phone specifications">
-  <div class="spec-page-nav">
-    <span class="logo">MobileZone</span>
-    <button type="button" class="spec-back-btn" onclick="closeSpec()">← All phones</button>
-  </div>
-  <div class="spec-page-inner" id="specBody"></div>
-</div>
-
 <script>
 /* n:1 = new/incoming → show on main Latest section (32 models). Rest only via Brands / Finder */
 const phones=[
@@ -889,7 +869,7 @@ function card(x){
       <div class="price">${money(x.p)}</div>
       <div class="meta">${x.r} • ${x.s}<br>${x.c} • ${x.bat}</div>
       <div class="buttons">
-        <button type="button" class="btn view" style="flex:1" onclick='openSpec(${JSON.stringify({b:x.b,m:x.m,p:x.p,r:x.r,s:x.s,c:x.c,bat:x.bat,g:x.g,img:x.img,e:x.e})})'>Specifications</button>
+        <a class="btn view" style="flex:1" href="${url}">Specifications</a>
         <button type="button" class="btn compare-btn" style="flex:1">＋ Compare</button>
       </div>
     </div>
@@ -1082,187 +1062,6 @@ document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>
 if(localStorage.getItem("mz-dark")==="1") document.body.classList.add("dark");
 
 document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap"))suggestions.style.display="none"});
-
-/* Extra spec hints by price tier (typical for segment — not lab-tested) */
-function specExtras(x){
-  const p=x.p, ram=parseInt(x.r)||6, bat=parseInt(x.bat)||5000;
-  let cpu, gpu, display, charge, refresh, build;
-  if(x.b==="Apple"){
-    cpu=p>450000?"Apple A18 Pro / A19 class":"Apple A18 / A17 class";
-    gpu="Apple GPU (integrated)";
-    display=p>400000?"6.3–6.9\" Super Retina XDR OLED":"6.1–6.7\" Super Retina OLED";
-    charge="MagSafe / USB-C · 20–35W class";
-    refresh=p>400000?"120Hz ProMotion":"60Hz";
-    build="Glass + aluminum / titanium (variant)";
-  }else if(p>=250000){
-    cpu="Flagship Snapdragon 8 Gen / Dimensity 9300 class";
-    gpu="Adreno / Mali high-end";
-    display="6.6–6.8\" AMOLED · 1.5K–2K";
-    charge="50–100W wired · wireless on many";
-    refresh="120Hz";
-    build="Glass + metal / IP65–68 typical";
-  }else if(p>=100000){
-    cpu="Upper mid Snapdragon 7 Gen / Dimensity 7200–8300 class";
-    gpu="Adreno / Mali mid-high";
-    display="6.5–6.8\" AMOLED · FHD+";
-    charge="45–80W fast charge";
-    refresh="120Hz";
-    build="Glass + plastic frame · IP54–65 on some";
-  }else if(p>=50000){
-    cpu="Mid-range Dimensity 6300–7020 / Snapdragon 6 Gen class";
-    gpu="Integrated mid GPU";
-    display="6.5–6.7\" AMOLED or IPS · FHD+";
-    charge="33–67W";
-    refresh="90–120Hz";
-    build="Plastic / glass front";
-  }else{
-    cpu="Entry Helio / Unisoc / Snapdragon 4 class";
-    gpu="Entry integrated GPU";
-    display="6.5–6.7\" IPS LCD · HD+ / FHD+";
-    charge="18–33W";
-    refresh="90Hz typical";
-    build="Plastic body";
-  }
-  const os=x.b==="Apple"?"iOS (latest supported)":x.b==="Huawei"?"HarmonyOS / EMUI":x.b==="Google"?"Android (Pixel stock)":"Android + brand UI";
-  return {cpu,gpu,display,charge,refresh,build,os,ramGB:ram,rom:x.s,bat};
-}
-
-/* ========== Full-page Specifications ========== */
-function openSpec(x){
-  const vs=valueScore(x);
-  const modelUrl="/"+slug(x.b+" "+x.m)+"-price-pakistan";
-  const best=parseInt(x.c)>=100?"Camera-focused":parseInt(x.bat)>=6000?"Battery life":parseInt(x.r)>=12?"Performance":"Everyday use";
-  const ex=specExtras(x);
-
-  /* Related: same brand first, then similar price, exclude current */
-  let related=phones.filter(p=>p.b===x.b&&(p.m!==x.m));
-  if(related.length<6){
-    const more=phones.filter(p=>(p.b!==x.b||p.m!==x.m)&&Math.abs(p.p-x.p)<80000)
-      .sort((a,b)=>Math.abs(a.p-x.p)-Math.abs(b.p-x.p));
-    related=[...related,...more];
-  }
-  /* unique by name, top 6 by value score */
-  const seen=new Set();
-  related=related.filter(p=>{
-    const k=p.b+"|"+p.m;
-    if(seen.has(k)||(p.b===x.b&&p.m===x.m)) return false;
-    seen.add(k); return true;
-  }).sort((a,b)=>valueScore(b)-valueScore(a)).slice(0,6);
-
-  const relHtml=related.map(p=>{
-    const pUrl="/"+slug(p.b+" "+p.m)+"-price-pakistan";
-    return `
-    <article class="card sp-rec">
-      <a class="sp-pic-btn" href="${pUrl}" aria-label="${p.b} ${p.m} price in Pakistan">${p.img?`<img class="ph-photo" loading="lazy" decoding="async" alt="${p.b} ${p.m} price in Pakistan" src="images/${p.img}">`:``}</a>
-      <div class="body">
-        <div class="brand">${p.b}${p.g==="yes"?` <span class="badge">5G</span>`:``}${p.e?` <span class="exp-pill">Expected</span>`:``}</div>
-        <div class="model"><a href="${pUrl}">${p.m}</a></div>
-        <div class="price">${money(p.p)}</div>
-        <div class="meta">${p.r} • ${p.s}<br>${p.c} • ${p.bat}</div>
-      </div>
-    </article>`;
-  }).join("");
-
-  document.getElementById("specBody").innerHTML=`
-    <section class="sp-hero"><div class="sp-hero-inner">
-      <div class="sp-copy">
-        <h1>${x.b} ${x.m}</h1>
-        <div class="sp-price">${money(x.p)}</div>
-        <div class="sp-note">Prices updated: ${PRICE_UPDATED} · Approximate price — confirm at shop</div>
-        <div class="sp-chips">
-          <span class="sp-chip">RAM <b>${x.r}</b></span>
-          <span class="sp-chip">Storage <b>${x.s}</b></span>
-          <span class="sp-chip">Camera <b>${x.c}</b></span>
-          <span class="sp-chip">Battery <b>${x.bat}</b></span>
-          <span class="sp-chip">Network <b>${x.g==="yes"?"5G":"4G"}</b></span>
-          ${x.e?`<span class="sp-chip">Expected price</span>`:``}
-        </div>
-        <div style="margin-top:16px"><a class="sp-lb-link" href="${modelUrl}">Full specifications dekhein →</a></div>
-      </div>
-      <div class="sp-visual"><div class="sp-glow"></div><div class="sp-fan">
-        <a class="sp-main-card" href="${modelUrl}" aria-label="${x.b} ${x.m} price in Pakistan">${x.img?`<img loading="lazy" decoding="async" alt="${x.b} ${x.m} price in Pakistan" src="images/${x.img}">`:`<div style="height:150px;display:flex;align-items:center;justify-content:center;color:var(--m);font-weight:700">Photo coming soon</div>`}<b>${x.b} ${x.m}</b><span>${money(x.p)}</span></a>
-      </div></div>
-    </div></section>
-
-    <div class="spec-block">
-      <h2>Memory &amp; Storage</h2>
-      <table class="spec-table">
-        <tr><td>RAM</td><td><strong>${x.r}</strong></td></tr>
-        <tr><td>ROM / Storage</td><td><strong>${x.s}</strong> internal</td></tr>
-        <tr><td>Memory combo</td><td>${x.r} + ${x.s}</td></tr>
-        <tr><td>Expandable</td><td>Model / variant dependent (check box)</td></tr>
-      </table>
-    </div>
-
-    <div class="spec-block">
-      <h2>Processor &amp; Performance</h2>
-      <table class="spec-table">
-        <tr><td>CPU / Chipset</td><td>${ex.cpu}</td></tr>
-        <tr><td>GPU</td><td>${ex.gpu}</td></tr>
-        <tr><td>OS</td><td>${ex.os}</td></tr>
-        <tr><td>Performance class</td><td>${x.p>=250000?"Flagship":x.p>=100000?"Upper mid-range":x.p>=50000?"Mid-range":"Entry / budget"}</td></tr>
-      </table>
-      <p class="spec-note">Chipset class is typical for this price segment in Pakistan. Exact SoC region-to-region change ho sakta hai.</p>
-    </div>
-
-    <div class="spec-block">
-      <h2>Display</h2>
-      <table class="spec-table">
-        <tr><td>Panel (typical)</td><td>${ex.display}</td></tr>
-        <tr><td>Refresh rate</td><td>${ex.refresh}</td></tr>
-        <tr><td>Protection</td><td>Segment-typical glass (Gorilla / equivalent on many)</td></tr>
-      </table>
-    </div>
-
-    <div class="spec-block">
-      <h2>Camera</h2>
-      <table class="spec-table">
-        <tr><td>Main camera</td><td><strong>${x.c}</strong></td></tr>
-        <tr><td>Setup</td><td>${parseInt(x.c)>=100?"High-res main · multi-lens likely":parseInt(x.c)>=50?"50MP+ main · multi-lens typical":"Standard setup"}</td></tr>
-        <tr><td>Video</td><td>${x.p>=100000?"4K capable (most variants)":"1080p typical"}</td></tr>
-        <tr><td>Front camera</td><td>Segment-typical selfie sensor</td></tr>
-      </table>
-    </div>
-
-    <div class="spec-block">
-      <h2>Battery &amp; Charging</h2>
-      <table class="spec-table">
-        <tr><td>Battery</td><td><strong>${x.bat}</strong></td></tr>
-        <tr><td>Charging (typical)</td><td>${ex.charge}</td></tr>
-        <tr><td>Use case</td><td>${parseInt(x.bat)>=6000?"Heavy / all-day+":parseInt(x.bat)>=5000?"Full day for most users":"Moderate use"}</td></tr>
-      </table>
-    </div>
-
-    <div class="spec-block">
-      <h2>Network, Body &amp; Other</h2>
-      <table class="spec-table">
-        <tr><td>Network</td><td>${x.g==="yes"?"5G / 4G / 3G / 2G":"4G / 3G / 2G"}</td></tr>
-        <tr><td>SIM</td><td>Dual SIM (market dependent)</td></tr>
-        <tr><td>Build</td><td>${ex.build}</td></tr>
-        <tr><td>Sensors</td><td>Fingerprint · accelerometer · proximity · ambient light (typical)</td></tr>
-        <tr><td>Price in Pakistan</td><td><strong>${money(x.p)}</strong></td></tr>
-        <tr><td>Value Score</td><td>★ ${vs} / 99</td></tr>
-        <tr><td>Best for</td><td>${best}</td></tr>
-      </table>
-      <p class="spec-note">Prices approximate. Official vs grey: PTA status confirm karein. Exact chipset / Hz / watts brand box ya shop se verify karein.</p>
-    </div>
-
-    <div class="spec-block">
-      <h2>🔥 Related &amp; top picks for you</h2>
-      <p class="spec-note" style="margin-top:0">Same brand + similar budget — compare karke best choose karo.</p>
-      <div class="rel-grid">${relHtml||"<p class='spec-note'>No related models.</p>"}</div>
-      <p class="rel-cta">Name ya pic par click karein → us model ka <strong>full page</strong> khul jayega</p>
-    </div>`;
-  document.getElementById("specPage").classList.add("show");
-  document.body.style.overflow="hidden";
-  window.scrollTo(0,0);
-  document.getElementById("specPage").scrollTop=0;
-}
-function closeSpec(){
-  document.getElementById("specPage").classList.remove("show");
-  document.body.style.overflow="";
-}
-document.addEventListener("keydown",e=>{if(e.key==="Escape") closeSpec()});
 
 /* ========== Compare (max 3, facts only, no winner) ========== */
 let compareBarEl=null;
