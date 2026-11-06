@@ -763,6 +763,26 @@ const phones=[
 {b:"Xiaomi",m:"Redmi Note 12",p:48999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"xiaomi-redmi-note-12.webp"},
 {b:"Xiaomi",m:"14",p:309999,r:"12GB",s:"512GB",c:"50MP",bat:"4610mAh",g:"yes",img:"xiaomi-14.webp"},
 {b:"Tecno",m:"Spark Go 2",p:19999,r:"2GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no",img:"tecno-spark-go-2.webp"},
+{b:"Samsung",m:"Galaxy S25",p:284999,r:"12GB",s:"256GB",c:"50MP",bat:"4000mAh",g:"yes",img:"samsung-galaxy-s25.webp"},
+{b:"Samsung",m:"Galaxy A35 5G",p:119999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a35-5g.webp"},
+{b:"Samsung",m:"Galaxy A06",p:26999,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no",img:"samsung-galaxy-a06.webp"},
+{b:"Samsung",m:"Galaxy S23 FE",p:204999,r:"8GB",s:"128GB",c:"50MP",bat:"4500mAh",g:"yes",img:"samsung-galaxy-s23-fe.webp"},
+{b:"OnePlus",m:"Nord CE 4",p:92999,r:"8GB",s:"128GB",c:"50MP",bat:"5500mAh",g:"yes",img:"oneplus-nord-ce-4.webp"},
+{b:"Oppo",m:"A58",p:48999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"oppo-a58.webp"},
+{b:"Oppo",m:"Reno 11 5G",p:129999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"oppo-reno-11-5g.webp"},
+{b:"Oppo",m:"A18",p:27999,r:"4GB",s:"64GB",c:"8MP",bat:"5000mAh",g:"no",img:"oppo-a18.webp"},
+{b:"Vivo",m:"V30 5G",p:129999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"vivo-v30-5g.webp"},
+{b:"Vivo",m:"Y100",p:56999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"vivo-y100.webp"},
+{b:"Huawei",m:"Nova 12 SE",p:120999,r:"8GB",s:"256GB",c:"108MP",bat:"4500mAh",g:"no",img:"huawei-nova-12-se.webp"},
+{b:"Huawei",m:"Pura 70 Ultra",p:347000,r:"16GB",s:"512GB",c:"50MP",bat:"5200mAh",g:"yes",img:"huawei-pura-70-ultra.webp"},
+{b:"Honor",m:"X7c",p:47999,r:"8GB",s:"256GB",c:"108MP",bat:"6000mAh",g:"no",img:"honor-x7c.webp"},
+{b:"Honor",m:"X8b",p:79999,r:"8GB",s:"512GB",c:"108MP",bat:"4500mAh",g:"no",img:"honor-x8b.webp"},
+{b:"Motorola",m:"Moto G54 5G",p:39999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"motorola-moto-g54-5g.webp"},
+{b:"Apple",m:"iPhone 15",p:344999,r:"6GB",s:"128GB",c:"48MP",bat:"3349mAh",g:"yes",img:"apple-iphone-15.webp"},
+{b:"Google",m:"Pixel 8a",p:127999,r:"8GB",s:"128GB",c:"64MP",bat:"4492mAh",g:"yes",img:"google-pixel-8a.webp"},
+{b:"Nothing",m:"Phone 2a",p:116749,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",img:"nothing-phone-2a.webp"},
+{b:"Nothing",m:"Phone 3a",p:153499,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"nothing-phone-3a.webp"},
+{b:"Realme",m:"C55",p:52999,r:"6GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no",img:"realme-c55.webp"},
 ];
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
@@ -909,7 +929,7 @@ const numVal=v=>{const m=v.match(/([\d.]+)\s*(TB|GB|mAh|MP)/);return m?parseFloa
     document.getElementById(id).insertAdjacentHTML("beforeend",`<option>${v}</option>`);
   });
 });
-const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices"};
+const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices",Realme:"realme-mobile-prices"};
 brandsGrid.innerHTML=brands.map(b=>{
   const cnt=phones.filter(x=>x.b===b&&x.p>0).length;
   return `<a class="brandbox" href="/${brandPage[b]}">${b}<small style="display:block;color:var(--m);font-size:10px;font-weight:500;margin-top:2px">${cnt} models</small></a>`;
