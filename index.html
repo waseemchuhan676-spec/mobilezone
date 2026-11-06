@@ -783,6 +783,26 @@ const phones=[
 {b:"Nothing",m:"Phone 2a",p:116749,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",img:"nothing-phone-2a.webp"},
 {b:"Nothing",m:"Phone 3a",p:153499,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"nothing-phone-3a.webp"},
 {b:"Realme",m:"C55",p:52999,r:"6GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no",img:"realme-c55.webp"},
+{b:"Oppo",m:"Reno 12",p:159999,r:"12GB",s:"512GB",c:"50MP",bat:"5000mAh",g:"yes",img:"oppo-reno-12.webp"},
+{b:"Oppo",m:"Reno 12F 5G",p:79999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"oppo-reno-12f-5g.webp"},
+{b:"Oppo",m:"A60",p:54999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"no",img:"oppo-a60.webp"},
+{b:"Samsung",m:"Galaxy A34 5G",p:116999,r:"8GB",s:"256GB",c:"48MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a34-5g.webp"},
+{b:"Samsung",m:"Galaxy S24 FE",p:219999,r:"8GB",s:"256GB",c:"50MP",bat:"4700mAh",g:"yes",img:"samsung-galaxy-s24-fe.webp"},
+{b:"Vivo",m:"Y28",p:42999,r:"6GB",s:"128GB",c:"50MP",bat:"6000mAh",g:"no",img:"vivo-y28.webp"},
+{b:"Realme",m:"C61",p:30999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"realme-c61.webp"},
+{b:"Realme",m:"Note 60",p:24999,r:"4GB",s:"64GB",c:"32MP",bat:"5000mAh",g:"no",img:"realme-note-60.webp"},
+{b:"Honor",m:"X9b",p:129999,r:"8GB",s:"256GB",c:"108MP",bat:"5800mAh",g:"yes",img:"honor-x9b.webp"},
+{b:"Honor",m:"90 Lite",p:89999,r:"8GB",s:"256GB",c:"100MP",bat:"4500mAh",g:"yes",img:"honor-90-lite.webp"},
+{b:"Itel",m:"S25 Ultra",p:44999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"no",img:"itel-s25-ultra.webp"},
+{b:"Itel",m:"S25",p:31499,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"itel-s25.webp"},
+{b:"Itel",m:"S24",p:33999,r:"8GB",s:"128GB",c:"108MP",bat:"5000mAh",g:"no",img:"itel-s24.webp"},
+{b:"Itel",m:"A70",p:20999,r:"4GB",s:"128GB",c:"13MP",bat:"5000mAh",g:"no",img:"itel-a70.webp"},
+{b:"Itel",m:"A60s",p:22999,r:"4GB",s:"128GB",c:"8MP",bat:"5000mAh",g:"no",img:"itel-a60s.webp"},
+{b:"Itel",m:"A80",p:21499,r:"3GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",img:"itel-a80.webp"},
+{b:"Poco",m:"X3 Pro",p:49999,r:"6GB",s:"128GB",c:"48MP",bat:"5160mAh",g:"no",img:"poco-x3-pro.webp"},
+{b:"Poco",m:"X3 GT",p:59999,r:"8GB",s:"256GB",c:"64MP",bat:"5000mAh",g:"yes",img:"poco-x3-gt.webp"},
+{b:"Motorola",m:"Moto G84",p:74999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"motorola-moto-g84.webp"},
+{b:"Infinix",m:"GT 20 Pro",p:99999,r:"12GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes",img:"infinix-gt-20-pro.webp"},
 ];
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
@@ -929,7 +949,7 @@ const numVal=v=>{const m=v.match(/([\d.]+)\s*(TB|GB|mAh|MP)/);return m?parseFloa
     document.getElementById(id).insertAdjacentHTML("beforeend",`<option>${v}</option>`);
   });
 });
-const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices",Realme:"realme-mobile-prices"};
+const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices",Realme:"realme-mobile-prices",Poco:"poco-mobile-prices",Itel:"itel-mobile-prices"};
 brandsGrid.innerHTML=brands.map(b=>{
   const cnt=phones.filter(x=>x.b===b&&x.p>0).length;
   return `<a class="brandbox" href="/${brandPage[b]}">${b}<small style="display:block;color:var(--m);font-size:10px;font-weight:500;margin-top:2px">${cnt} models</small></a>`;
