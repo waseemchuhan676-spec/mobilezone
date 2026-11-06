@@ -40,8 +40,8 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 
 - Homepage: https://mobilezone-zeta.vercel.app/
 - Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices
-- Budget pages: /best-phones-under-40000, /best-phones-under-50000, /best-phones-under-70000, /best-phones-under-100000, /best-5g-phones-pakistan
-- Latest phones: /latest-mobile-phones
+- Budget pages: /best-phones-under-20000, /best-phones-under-30000, /best-phones-under-40000, /best-phones-under-50000, /best-phones-under-70000, /best-phones-under-100000, /best-5g-phones-pakistan
+- Latest phones: /latest-mobile-phones, /new-mobile-phones-pakistan-2026
 - Individual phone pages: /<brand>-<model>-price-pakistan (63 models: 56 live-priced + 7 archive with photos, price not confirmed)
 - Phone pages show confirmed specs only (price, RAM, storage, camera, battery, 5G). Display, processor, charging, dimensions, PTA status and warranty are marked as not confirmed where unverified — never estimated.
 
