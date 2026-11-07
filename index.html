@@ -588,7 +588,7 @@ body.dark footer{background:#020617}
       </div>
       <div>
         <strong>Tools</strong>
-        <p><a href="#tools">PTA Tax Calculator</a><br><a href="#tools">Smart Finder</a><br><a href="#usecase">Best by Use Case</a><br><a href="#guide">Price guide 2026</a><br><a href="/mobile-guides">Mobile Guides</a><br><a href="/guides/pta-approved-vs-non-pta-phones.html">PTA Approved vs Non-PTA Phones</a></p>
+        <p><a href="#tools">PTA Tax Calculator</a><br><a href="#tools">Smart Finder</a><br><a href="#usecase">Best by Use Case</a><br><a href="#guide">Price guide 2026</a><br><a href="/mobile-guides">Mobile Guides</a><br><a href="/guides/pta-approved-vs-non-pta-phones.html">PTA Approved vs Non-PTA Phones</a><br><a href="/guides/pta-tax-on-mobile-phones-pakistan.html">PTA Tax on Mobile Phones in Pakistan</a></p>
       </div>
       <div>
         <strong>Browse</strong>
@@ -803,6 +803,26 @@ const phones=[
 {b:"Poco",m:"X3 GT",p:59999,r:"8GB",s:"256GB",c:"64MP",bat:"5000mAh",g:"yes",img:"poco-x3-gt.webp"},
 {b:"Motorola",m:"Moto G84",p:74999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"motorola-moto-g84.webp"},
 {b:"Infinix",m:"GT 20 Pro",p:99999,r:"12GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes",img:"infinix-gt-20-pro.webp"},
+{b:"Realme",m:"12 Pro+ 5G",p:104999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"realme-12-pro-plus.webp"},
+{b:"Huawei",m:"Nova 11",p:104999,r:"8GB",s:"128GB",c:"50MP",bat:"4500mAh",g:"no",img:"huawei-nova-11.webp"},
+{b:"Samsung",m:"Galaxy A25 5G",p:98499,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a25-5g.webp"},
+{b:"Motorola",m:"Moto G85 5G",p:79999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"motorola-moto-g85-5g.webp"},
+{b:"Vivo",m:"V29 5G",p:159999,r:"12GB",s:"256GB",c:"50MP",bat:"4600mAh",g:"yes",img:"vivo-v29-5g.webp"},
+{b:"Samsung",m:"Galaxy A54 5G",p:140999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a54-5g.webp"},
+{b:"Honor",m:"X7b",p:59999,r:"8GB",s:"256GB",c:"108MP",bat:"6000mAh",g:"no",img:"honor-x7b.webp"},
+{b:"Poco",m:"F4 5G",p:64999,r:"8GB",s:"256GB",c:"64MP",bat:"4500mAh",g:"yes",img:"poco-f4-5g.webp"},
+{b:"Poco",m:"X4 Pro 5G",p:69999,r:"8GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes",img:"poco-x4-pro-5g.webp"},
+{b:"Vivo",m:"V25 5G",p:139999,r:"12GB",s:"256GB",c:"64MP",bat:"4500mAh",g:"yes",img:"vivo-v25-5g.webp"},
+{b:"Samsung",m:"Galaxy A73 5G",p:170499,r:"8GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a73-5g.webp"},
+{b:"Samsung",m:"Galaxy S22 5G",p:232999,r:"8GB",s:"256GB",c:"50MP",bat:"3700mAh",g:"yes",img:"samsung-galaxy-s22-5g.webp"},
+{b:"Samsung",m:"Galaxy A53 5G",p:133999,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a53-5g.webp"},
+{b:"Samsung",m:"Galaxy S21 FE 5G",p:162999,r:"8GB",s:"128GB",c:"12MP",bat:"4500mAh",g:"yes",img:"samsung-galaxy-s21-fe-5g.webp"},
+{b:"Honor",m:"90 5G",p:159999,r:"8GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",img:"honor-90-5g.webp"},
+{b:"Samsung",m:"Galaxy A15 5G",p:55999,r:"4GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a15-5g.webp"},
+{b:"Poco",m:"F5 Pro 5G",p:104999,r:"8GB",s:"256GB",c:"64MP",bat:"5160mAh",g:"yes",img:"poco-f5-pro-5g.webp"},
+{b:"Honor",m:"X9a 5G",p:129999,r:"8GB",s:"256GB",c:"64MP",bat:"5100mAh",g:"yes",img:"honor-x9a-5g.webp"},
+{b:"Motorola",m:"Moto G73 5G",p:56999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"motorola-moto-g73-5g.webp"},
+{b:"Samsung",m:"Galaxy A33 5G",p:61999,r:"6GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a33-5g.webp"},
 ];
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
@@ -932,7 +952,7 @@ showLatest();
 render(latestPhones.slice(0,8),"popular");
 
 /* Freshness: single date constant, update on each price refresh */
-const PRICE_UPDATED="29 October 2026";
+const PRICE_UPDATED="8 November 2026";
 document.querySelectorAll(".price-updated").forEach(el=>el.textContent="Prices updated: "+PRICE_UPDATED);
 document.querySelectorAll(".hero-phone").forEach(f=>{const p=phones.find(x=>x.m===f.dataset.model);if(p&&p.p>0){const s=f.querySelector(".hp-price");if(s)s.textContent="Rs. "+p.p.toLocaleString("en-US");}});
 document.getElementById("heroStatModels").textContent=phones.length;
