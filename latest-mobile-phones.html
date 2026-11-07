@@ -49,5 +49,8 @@ document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "MobileZone", "url": "https://mobilezone.site/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mobilezone.site/"}, {"@type": "ListItem", "position": 2, "name": "Latest mobile phones"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the latest mobile phones in Pakistan?", "acceptedAnswer": {"@type": "Answer", "text": "This page lists the 27 newest and incoming phones in the MobileZone catalogue, with prices updated: 29 October 2026. Models marked Expected have not launched yet — their prices are expected prices, not official prices."}}, {"@type": "Question", "name": "Are these prices confirmed?", "acceptedAnswer": {"@type": "Answer", "text": "Prices are approximate market prices (updated: 29 October 2026) and change with the market. Confirm the final price at a shop before buying."}}]}]}
 </script>
+<script>/* mz-card-click: clicking anywhere on a model card opens its specifications page; links and buttons keep their own behaviour */
+document.addEventListener("click",function(e){var c=e.target.closest("article.card");if(!c)return;if(e.target.closest("a,button,input,select,textarea,summary"))return;var a=c.querySelector(".model a")||c.querySelector("a[href*='-price-pakistan']");if(a&&a.href)location.href=a.href;});
+</script>
 </body>
 </html>

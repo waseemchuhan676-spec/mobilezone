@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
-<style>.cmp-search{position:relative;max-width:520px}.cmp-search input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--t);font-size:15px}.cmp-sug{position:absolute;left:0;right:0;top:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:6px;overflow:hidden;display:none;z-index:10}.cmp-sug div{padding:10px 14px;cursor:pointer;border-bottom:1px solid var(--line)}.cmp-sug div:hover{background:var(--bg)}.cmp-chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 12px;margin:0 8px 8px 0;font-size:13px;font-weight:700}.cmp-chip button{background:none;border:0;color:var(--b);font-weight:900;cursor:pointer;margin-left:6px}table.cmp td:first-child{width:150px}.cmp-photo{height:120px;object-fit:contain}</style>
+<style>.cmp-search{position:relative;max-width:520px}.cmp-search input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--t);font-size:16px}.cmp-sug{position:absolute;left:0;right:0;top:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:6px;overflow:hidden;display:none;z-index:10}.cmp-sug div{padding:10px 14px;cursor:pointer;border-bottom:1px solid var(--line)}.cmp-sug div:hover{background:var(--bg)}.cmp-chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:10px 14px;margin:0 8px 8px 0;font-size:13px;font-weight:700}.cmp-chip button{background:none;border:0;color:var(--b);font-weight:900;cursor:pointer;margin:-10px -6px -10px 6px;padding:0 10px;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}table.cmp td:first-child{width:150px}.cmp-photo{height:120px;object-fit:contain}@media(max-width:650px){#cmpTable table.specs{min-width:560px;overflow:visible}#cmpTable table.specs th:first-child,#cmpTable table.specs td:first-child{position:sticky;left:0;background:var(--card);z-index:1}#cmpTable table.specs th:first-child{width:104px;min-width:104px}.cmp-photo{height:90px}}</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -39,7 +39,7 @@
 <p>Pick up to 3 phones and see their price, RAM, storage, camera, battery and 5G side by side. Only confirmed catalogue data is shown — no invented specifications, no declared winner. Prices updated: 29 October 2026 (approximate — confirm at shop).</p>
 <div class="cmp-search"><input id="cmpSearch" type="text" placeholder="Search a phone to add (e.g. Galaxy S25 Ultra)" autocomplete="off"><div id="cmpSug" class="cmp-sug"></div></div>
 <p id="cmpChips" style="margin-top:14px"></p>
-<div id="cmpTable" style="overflow-x:auto"></div>
+<div id="cmpTable" class="cmp-scroll" style="overflow-x:auto"></div>
 <p class="note">Tip: from the homepage, tap <strong>＋ Compare</strong> on any phone card (up to 3), then <strong>Compare now</strong> — the selection opens here. Sharing this page with <code>?phones=</code> in the address keeps the same comparison.</p>
 <section><h2>Frequently asked questions</h2><details><summary>How do I compare phones on MobileZone?</summary><div class='ans'>Pick up to 3 phones: use the Compare button on any phone card on the homepage, or search by name below. The table shows price, RAM, storage, camera, battery and 5G side by side. No winner is declared — the numbers speak for themselves.</div></details><details><summary>Are the prices shown confirmed?</summary><div class='ans'>Prices are approximate market prices (updated: 29 October 2026) and change with the market. Confirm the final price at a shop before buying. MobileZone does not sell phones.</div></details><details><summary>Is MobileZone a mobile comparison website?</summary><div class='ans'>Yes. MobileZone is a mobile comparison website — the compare tool lets you compare up to 3 phones side by side on price, RAM, storage, camera, battery and 5G.</div></details></section>
 <p class="note">See all <a href="/">mobile prices</a> or browse <a href="/best-phones-under-50000">phones under 50K</a>. MobileZone does not sell phones.</p>
@@ -59,10 +59,13 @@ if(params){
     const x=CMP.find(y=>y.url==="/"+s);
     if(x&&sel.length<3&&!sel.includes(x)) sel.push(x);
   });
+}else{
+  try{const saved=JSON.parse(localStorage.getItem("mz-compare")||"[]");if(Array.isArray(saved))saved.forEach(s=>{const x=CMP.find(y=>y.b===s.b&&y.m===s.m);if(x&&sel.length<3&&!sel.includes(x))sel.push(x);});}catch(e){}
 }
 const searchEl=document.getElementById("cmpSearch"),sugEl=document.getElementById("cmpSug"),
       chipsEl=document.getElementById("cmpChips"),tableEl=document.getElementById("cmpTable");
 function renderCmp(){
+  try{localStorage.setItem("mz-compare",JSON.stringify(sel.map(x=>({b:x.b,m:x.m}))));}catch(e){}
   chipsEl.innerHTML=sel.length?sel.map((x,i)=>`<span class="cmp-chip">${x.b} ${x.m} <button type="button" onclick="rmCmp(${i})" aria-label="Remove">×</button></span>`).join(""):"<span style='color:var(--m)'>No phones selected yet — search above or use Compare on the homepage.</span>";
   if(sel.length<2){tableEl.innerHTML="<p style='color:var(--m)'>Add at least 2 phones to see the comparison table.</p>";return}
   const rows=[["Photo",x=>x.img?`<img class="cmp-photo" loading="lazy" alt="" src="/images/${x.img}">`:"Photo not available"],
