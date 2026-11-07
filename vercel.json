@@ -1,1 +1,16 @@
-{"cleanUrls":true}
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mobilezone-zeta.vercel.app"
+        }
+      ],
+      "destination": "https://mobilezone.site/:path*",
+      "permanent": true
+    }
+  ]
+}

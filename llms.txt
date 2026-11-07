@@ -3,7 +3,7 @@
 > Mobile phone prices in Pakistan 2026 — latest phones, specifications, and rates in PKR.
 
 MobileZone lists mobile phone prices in Pakistan, with full specifications per phone.
-Canonical site: https://mobilezone-zeta.vercel.app/
+Canonical site: https://mobilezone.site/
 
 ## What the site covers
 
@@ -38,7 +38,7 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 
 ## Pages
 
-- Homepage: https://mobilezone-zeta.vercel.app/
+- Homepage: https://mobilezone.site/
 - Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices
 - Budget pages: /best-phones-under-20000, /best-phones-under-30000, /best-phones-under-40000, /best-phones-under-50000, /best-phones-under-70000, /best-phones-under-100000, /best-5g-phones-pakistan
 - Latest phones: /latest-mobile-phones, /new-mobile-phones-pakistan-2026
@@ -50,23 +50,23 @@ Canonical site: https://mobilezone-zeta.vercel.app/
 - Phone Finder (homepage): filters for brand, price, RAM, storage, battery, camera and 5G — all from confirmed catalogue data only.
 
 ## Guides
-- https://mobilezone-zeta.vercel.app/guides/how-to-check-pta-approval-status: How to Check PTA Approval Status in Pakistan | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/how-to-check-imei-status: How to Check IMEI Status | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/pta-tax-on-mobile-phones-pakistan: PTA Tax on Mobile Phones in Pakistan (2026) | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/best-gaming-phones-pakistan: Best Gaming Phones in Pakistan: What Actually Matters | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/best-camera-phones-pakistan: Best Camera Phones in Pakistan: Beyond Megapixels | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/best-battery-phones-pakistan: Best Battery Phones in Pakistan: How to Pick for Battery Life | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/amoled-vs-lcd-display: AMOLED vs LCD Display: Which Is Better? | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/8gb-vs-12gb-ram: 8GB vs 12GB RAM: How Much Do You Need? | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/snapdragon-vs-mediatek: Snapdragon vs MediaTek: Which Chipset Is Better? | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/pta-approved-vs-non-pta-phones: PTA Approved vs Non-PTA Phones: The Full Difference | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/how-to-buy-used-phone-safely-pakistan: How to Buy a Used Phone Safely in Pakistan | MobileZone
-- https://mobilezone-zeta.vercel.app/guides/how-to-choose-mobile-by-budget-pakistan: How to Choose a Mobile Phone by Budget in Pakistan | MobileZone
+- https://mobilezone.site/guides/how-to-check-pta-approval-status: How to Check PTA Approval Status in Pakistan | MobileZone
+- https://mobilezone.site/guides/how-to-check-imei-status: How to Check IMEI Status | MobileZone
+- https://mobilezone.site/guides/pta-tax-on-mobile-phones-pakistan: PTA Tax on Mobile Phones in Pakistan (2026) | MobileZone
+- https://mobilezone.site/guides/best-gaming-phones-pakistan: Best Gaming Phones in Pakistan: What Actually Matters | MobileZone
+- https://mobilezone.site/guides/best-camera-phones-pakistan: Best Camera Phones in Pakistan: Beyond Megapixels | MobileZone
+- https://mobilezone.site/guides/best-battery-phones-pakistan: Best Battery Phones in Pakistan: How to Pick for Battery Life | MobileZone
+- https://mobilezone.site/guides/amoled-vs-lcd-display: AMOLED vs LCD Display: Which Is Better? | MobileZone
+- https://mobilezone.site/guides/8gb-vs-12gb-ram: 8GB vs 12GB RAM: How Much Do You Need? | MobileZone
+- https://mobilezone.site/guides/snapdragon-vs-mediatek: Snapdragon vs MediaTek: Which Chipset Is Better? | MobileZone
+- https://mobilezone.site/guides/pta-approved-vs-non-pta-phones: PTA Approved vs Non-PTA Phones: The Full Difference | MobileZone
+- https://mobilezone.site/guides/how-to-buy-used-phone-safely-pakistan: How to Buy a Used Phone Safely in Pakistan | MobileZone
+- https://mobilezone.site/guides/how-to-choose-mobile-by-budget-pakistan: How to Choose a Mobile Phone by Budget in Pakistan | MobileZone
 
 ## Trust pages
-- https://mobilezone-zeta.vercel.app/about: About MobileZone | Mobile Prices in Pakistan
-- https://mobilezone-zeta.vercel.app/contact: Contact MobileZone
-- https://mobilezone-zeta.vercel.app/privacy-policy: Privacy Policy | MobileZone
-- https://mobilezone-zeta.vercel.app/disclaimer: Disclaimer | MobileZone
-- https://mobilezone-zeta.vercel.app/editorial-policy: Editorial Policy | MobileZone
-- https://mobilezone-zeta.vercel.app/mobile-guides: Mobile Guides | MobileZone
+- https://mobilezone.site/about: About MobileZone | Mobile Prices in Pakistan
+- https://mobilezone.site/contact: Contact MobileZone
+- https://mobilezone.site/privacy-policy: Privacy Policy | MobileZone
+- https://mobilezone.site/disclaimer: Disclaimer | MobileZone
+- https://mobilezone.site/editorial-policy: Editorial Policy | MobileZone
+- https://mobilezone.site/mobile-guides: Mobile Guides | MobileZone
