@@ -588,7 +588,7 @@ body.dark footer{background:#020617}
       </div>
       <div>
         <strong>Tools</strong>
-        <p><a href="#tools">PTA Tax Calculator</a><br><a href="#tools">Smart Finder</a><br><a href="#usecase">Best by Use Case</a><br><a href="#guide">Price guide 2026</a><br><a href="/mobile-guides">Mobile Guides</a><br><a href="/guides/pta-approved-vs-non-pta-phones.html">PTA Approved vs Non-PTA Phones</a><br><a href="/guides/pta-tax-on-mobile-phones-pakistan.html">PTA Tax on Mobile Phones in Pakistan</a></p>
+        <p><a href="#tools">PTA Tax Calculator</a><br><a href="#tools">Smart Finder</a><br><a href="#usecase">Best by Use Case</a><br><a href="#guide">Price guide 2026</a><br><a href="/mobile-guides">Mobile Guides</a><br><a href="/guides/pta-approved-vs-non-pta-phones.html">PTA Approved vs Non-PTA Phones</a><br><a href="/guides/pta-tax-on-mobile-phones-pakistan.html">PTA Tax on Mobile Phones in Pakistan</a><br><a href="/guides/how-to-check-pta-approval-status.html">How to Check PTA Approval Status</a></p>
       </div>
       <div>
         <strong>Browse</strong>
@@ -631,7 +631,7 @@ const phones=[
 {b:"Motorola",m:"Edge 60 Pro",p:149999,r:"12GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"motorola-edge-60-pro.webp"},
 {b:"Vivo",m:"V70 FE",p:124999,r:"12GB",s:"256GB",c:"50MP",bat:"7000mAh",g:"yes",n:1,img:"vivo-v70-fe.webp"},
 {b:"Oppo",m:"Reno 16F",p:149999,r:"8GB",s:"256GB",c:"50MP",bat:"7000mAh",g:"yes",n:1,img:"oppo-reno-16f.webp"},
-{b:"Tecno",m:"Camon 50",p:89499,r:"8GB",s:"256GB",c:"50MP",bat:"6500mAh",g:"no",n:1,img:"tecno-camon-50.webp"},
+{b:"Tecno",m:"Camon 50",p:89499,r:"8GB",s:"256GB",c:"50MP",bat:"6150mAh",g:"no",n:1,img:"tecno-camon-50.webp"},
 {b:"Honor",m:"X9c",p:89999,r:"12GB",s:"256GB",c:"108MP",bat:"6600mAh",g:"yes",n:1,img:"honor-x9c.webp"},
 /* —— older / brand-only models (not on main Latest grid) —— */
 {b:"Samsung",m:"Galaxy S24 Ultra",p:359999,r:"12GB",s:"256GB",c:"200MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-s24-ultra.webp"},
@@ -823,6 +823,26 @@ const phones=[
 {b:"Honor",m:"X9a 5G",p:129999,r:"8GB",s:"256GB",c:"64MP",bat:"5100mAh",g:"yes",img:"honor-x9a-5g.webp"},
 {b:"Motorola",m:"Moto G73 5G",p:56999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",img:"motorola-moto-g73-5g.webp"},
 {b:"Samsung",m:"Galaxy A33 5G",p:61999,r:"6GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"yes",img:"samsung-galaxy-a33-5g.webp"},
+{b:"Sony",m:"Xperia 10 V",p:144999,r:"8GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"yes",n:1,img:"sony-xperia-10-v.webp"},
+{b:"Poco",m:"X7 5G",p:128999,r:"8GB",s:"256GB",c:"50MP",bat:"5110mAh",g:"yes",n:1,img:"poco-x7-5g.webp"},
+{b:"Itel",m:"S23",p:21999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",n:1,img:"itel-s23.webp"},
+{b:"Google",m:"Pixel 9a",p:151999,r:"8GB",s:"128GB",c:"48MP",bat:"5100mAh",g:"yes",n:1,img:"google-pixel-9a.webp"},
+{b:"Apple",m:"iPhone 16 Pro",p:403999,r:"8GB",s:"128GB",c:"48MP",bat:"3582mAh",g:"yes",n:1,img:"apple-iphone-16-pro.webp"},
+{b:"Tecno",m:"Pova 6 Pro 5G",p:68999,r:"8GB",s:"256GB",c:"108MP",bat:"6000mAh",g:"yes",n:1,img:"tecno-pova-6-pro-5g.webp"},
+{b:"Realme",m:"12 Pro 5G",p:71999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"realme-12-pro-5g.webp"},
+{b:"Motorola",m:"Edge 50 Fusion",p:129999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"motorola-edge-50-fusion.webp"},
+{b:"Oppo",m:"Reno 13F",p:79999,r:"8GB",s:"256GB",c:"50MP",bat:"5800mAh",g:"no",n:1,img:"oppo-reno-13f.webp"},
+{b:"Xiaomi",m:"14T Pro",p:229999,r:"12GB",s:"512GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"xiaomi-14t-pro.webp"},
+{b:"Infinix",m:"Note 40 Pro+ 5G",p:89999,r:"12GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"yes",n:1,img:"infinix-note-40-pro-plus-5g.webp"},
+{b:"Nokia",m:"G60 5G",p:78999,r:"6GB",s:"128GB",c:"50MP",bat:"4500mAh",g:"yes",n:1,img:"nokia-g60-5g.webp"},
+{b:"Itel",m:"P55 5G",p:37999,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"itel-p55-5g.webp"},
+{b:"Huawei",m:"Nova 12i",p:84999,r:"8GB",s:"256GB",c:"108MP",bat:"5000mAh",g:"no",n:1,img:"huawei-nova-12i.webp"},
+{b:"Samsung",m:"Galaxy S24",p:289999,r:"8GB",s:"256GB",c:"50MP",bat:"4000mAh",g:"yes",n:1,img:"samsung-galaxy-s24.webp"},
+{b:"Vivo",m:"V27e",p:99999,r:"8GB",s:"256GB",c:"64MP",bat:"4600mAh",g:"no",n:1,img:"vivo-v27e.webp"},
+{b:"Google",m:"Pixel 8 Pro",p:253999,r:"12GB",s:"128GB",c:"50MP",bat:"5050mAh",g:"yes",n:1,img:"google-pixel-8-pro.webp"},
+{b:"Oppo",m:"A3x",p:27999,r:"4GB",s:"64GB",c:"8MP",bat:"5100mAh",g:"no",n:1,img:"oppo-a3x.webp"},
+{b:"Samsung",m:"Galaxy A17 5G",p:99999,r:"8GB",s:"256GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"samsung-galaxy-a17-5g.webp"},
+{b:"Google",m:"Pixel 8",p:163999,r:"8GB",s:"128GB",c:"50MP",bat:"4575mAh",g:"yes",n:1,img:"google-pixel-8.webp"},
 ];
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
@@ -952,7 +972,7 @@ showLatest();
 render(latestPhones.slice(0,8),"popular");
 
 /* Freshness: single date constant, update on each price refresh */
-const PRICE_UPDATED="8 November 2026";
+const PRICE_UPDATED="9 November 2026";
 document.querySelectorAll(".price-updated").forEach(el=>el.textContent="Prices updated: "+PRICE_UPDATED);
 document.querySelectorAll(".hero-phone").forEach(f=>{const p=phones.find(x=>x.m===f.dataset.model);if(p&&p.p>0){const s=f.querySelector(".hp-price");if(s)s.textContent="Rs. "+p.p.toLocaleString("en-US");}});
 document.getElementById("heroStatModels").textContent=phones.length;
@@ -971,7 +991,7 @@ const numVal=v=>{const m=v.match(/([\d.]+)\s*(TB|GB|mAh|MP)/);return m?parseFloa
     document.getElementById(id).insertAdjacentHTML("beforeend",`<option>${v}</option>`);
   });
 });
-const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices",Realme:"realme-mobile-prices",Poco:"poco-mobile-prices",Itel:"itel-mobile-prices"};
+const brandPage={Samsung:"samsung-mobile-prices",Apple:"apple-iphone-prices",Infinix:"infinix-mobile-prices",Tecno:"tecno-mobile-prices",Vivo:"vivo-mobile-prices",Oppo:"oppo-mobile-prices",Xiaomi:"xiaomi-mobile-prices",OnePlus:"oneplus-mobile-prices",Google:"google-pixel-prices",Motorola:"motorola-mobile-prices",Honor:"honor-mobile-prices",Sparx:"sparx-mobile-prices",Huawei:"huawei-mobile-prices",Nothing:"nothing-mobile-prices",Nokia:"nokia-mobile-prices",Realme:"realme-mobile-prices",Poco:"poco-mobile-prices",Itel:"itel-mobile-prices",Sony:"sony-mobile-prices"};
 brandsGrid.innerHTML=brands.map(b=>{
   const cnt=phones.filter(x=>x.b===b&&x.p>0).length;
   return `<a class="brandbox" href="/${brandPage[b]}">${b}<small style="display:block;color:var(--m);font-size:10px;font-weight:500;margin-top:2px">${cnt} models</small></a>`;
