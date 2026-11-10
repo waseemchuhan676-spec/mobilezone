@@ -1,0 +1,294 @@
+{
+ "runs": [
+  {
+   "date": "2026-11-10",
+   "models": [
+    {
+     "slug": "sony-xperia-1-vi",
+     "brand": "Sony",
+     "model": "Xperia 1 VI",
+     "price": 209999,
+     "status": "Expected"
+    },
+    {
+     "slug": "poco-f7",
+     "brand": "Poco",
+     "model": "Poco F7",
+     "price": 139999,
+     "status": "Expected"
+    },
+    {
+     "slug": "honor-200-pro",
+     "brand": "Honor",
+     "model": "Honor 200 Pro",
+     "price": 197999,
+     "status": "Expected"
+    },
+    {
+     "slug": "motorola-edge-50-pro",
+     "brand": "Motorola",
+     "model": "Edge 50 Pro",
+     "price": 187999,
+     "status": "Expected"
+    },
+    {
+     "slug": "motorola-moto-g64-5g",
+     "brand": "Motorola",
+     "model": "Moto G64 5G",
+     "price": 59999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-s23-ultra",
+     "brand": "Samsung",
+     "model": "Galaxy S23 Ultra",
+     "price": 389999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-z-flip6",
+     "brand": "Samsung",
+     "model": "Galaxy Z Flip6",
+     "price": 384999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-a05s",
+     "brand": "Samsung",
+     "model": "Galaxy A05s",
+     "price": 44999,
+     "status": "Official"
+    },
+    {
+     "slug": "xiaomi-13t-pro",
+     "brand": "Xiaomi",
+     "model": "13T Pro",
+     "price": 234999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "xiaomi-14-ultra",
+     "brand": "Xiaomi",
+     "model": "14 Ultra",
+     "price": 274999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "apple-iphone-15-pro",
+     "brand": "Apple",
+     "model": "iPhone 15 Pro",
+     "price": 444999,
+     "status": "Official"
+    },
+    {
+     "slug": "google-pixel-9-pro",
+     "brand": "Google",
+     "model": "Pixel 9 Pro",
+     "price": 269999,
+     "status": "Expected"
+    },
+    {
+     "slug": "infinix-note-40-5g",
+     "brand": "Infinix",
+     "model": "Note 40 5G",
+     "price": 64999,
+     "status": "Expected"
+    },
+    {
+     "slug": "infinix-zero-40-5g",
+     "brand": "Infinix",
+     "model": "Zero 40 5G",
+     "price": 89999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "tecno-phantom-x2",
+     "brand": "Tecno",
+     "model": "Phantom X2",
+     "price": 83999,
+     "status": "Expected"
+    },
+    {
+     "slug": "realme-11-pro-plus-5g",
+     "brand": "Realme",
+     "model": "11 Pro+ 5G",
+     "price": 84999,
+     "status": "Expected"
+    },
+    {
+     "slug": "realme-gt-6",
+     "brand": "Realme",
+     "model": "GT 6",
+     "price": 149999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oppo-reno-11-pro-5g",
+     "brand": "Oppo",
+     "model": "Reno 11 Pro 5G",
+     "price": 134999,
+     "status": "Expected"
+    },
+    {
+     "slug": "vivo-v40",
+     "brand": "Vivo",
+     "model": "V40",
+     "price": 139999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "nothing-phone-2",
+     "brand": "Nothing",
+     "model": "Phone 2",
+     "price": 239899,
+     "status": "Official"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "models": [
+    {
+     "slug": "poco-x6",
+     "brand": "Poco",
+     "model": "X6",
+     "price": 103999,
+     "status": "Expected"
+    },
+    {
+     "slug": "honor-200",
+     "brand": "Honor",
+     "model": "200",
+     "price": 104999,
+     "status": "Expected"
+    },
+    {
+     "slug": "honor-magic-6-lite",
+     "brand": "Honor",
+     "model": "Magic 6 Lite",
+     "price": 129999,
+     "status": "Expected"
+    },
+    {
+     "slug": "motorola-edge-40-neo",
+     "brand": "Motorola",
+     "model": "Edge 40 Neo",
+     "price": 129999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-s23",
+     "brand": "Samsung",
+     "model": "Galaxy S23",
+     "price": 399999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "infinix-note-30-5g",
+     "brand": "Infinix",
+     "model": "Note 30 5G",
+     "price": 74999,
+     "status": "Official"
+    },
+    {
+     "slug": "realme-12",
+     "brand": "Realme",
+     "model": "12",
+     "price": 59999,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-reno-13",
+     "brand": "Oppo",
+     "model": "Reno 13",
+     "price": 149999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oppo-a79-5g",
+     "brand": "Oppo",
+     "model": "A79 5G",
+     "price": 68999,
+     "status": "Expected"
+    },
+    {
+     "slug": "vivo-v50",
+     "brand": "Vivo",
+     "model": "V50",
+     "price": 139999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "vivo-y200",
+     "brand": "Vivo",
+     "model": "Y200",
+     "price": 62999,
+     "status": "Official"
+    },
+    {
+     "slug": "vivo-x100-pro",
+     "brand": "Vivo",
+     "model": "X100 Pro",
+     "price": 224999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "huawei-pura-70-pro",
+     "brand": "Huawei",
+     "model": "Pura 70 Pro",
+     "price": 174999,
+     "status": "Expected"
+    },
+    {
+     "slug": "nothing-phone-2a-plus",
+     "brand": "Nothing",
+     "model": "Phone 2a Plus",
+     "price": 151999,
+     "status": "Expected"
+    },
+    {
+     "slug": "realme-14-pro-plus",
+     "brand": "Realme",
+     "model": "14 Pro+",
+     "price": 114999,
+     "status": "Expected"
+    },
+    {
+     "slug": "vivo-v30e",
+     "brand": "Vivo",
+     "model": "V30e",
+     "price": 95999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-a24",
+     "brand": "Samsung",
+     "model": "Galaxy A24",
+     "price": 72999,
+     "status": "Official"
+    },
+    {
+     "slug": "motorola-moto-g35",
+     "brand": "Motorola",
+     "model": "Moto G35",
+     "price": 34999,
+     "status": "Expected"
+    },
+    {
+     "slug": "itel-p65",
+     "brand": "Itel",
+     "model": "P65",
+     "price": 27999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-a16-5g",
+     "brand": "Samsung",
+     "model": "Galaxy A16 5G",
+     "price": 59999,
+     "status": "Expected"
+    }
+   ]
+  }
+ ]
+}
