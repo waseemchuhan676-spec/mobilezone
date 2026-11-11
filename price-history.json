@@ -13,14 +13,14 @@
     {
      "slug": "poco-f7",
      "brand": "Poco",
-     "model": "Poco F7",
+     "model": "F7",
      "price": 139999,
      "status": "Expected"
     },
     {
      "slug": "honor-200-pro",
      "brand": "Honor",
-     "model": "Honor 200 Pro",
+     "model": "200 Pro",
      "price": 197999,
      "status": "Expected"
     },
@@ -287,6 +287,151 @@
      "model": "Galaxy A16 5G",
      "price": 59999,
      "status": "Expected"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "models": [
+    {
+     "slug": "sony-xperia-1-v",
+     "brand": "Sony",
+     "model": "Xperia 1 V",
+     "price": 181999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-a52",
+     "brand": "Samsung",
+     "model": "Galaxy A52",
+     "price": 65999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-a72",
+     "brand": "Samsung",
+     "model": "Galaxy A72",
+     "price": 82999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-m54",
+     "brand": "Samsung",
+     "model": "Galaxy M54",
+     "price": 79999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-a14",
+     "brand": "Samsung",
+     "model": "Galaxy A14",
+     "price": 32999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-a04e",
+     "brand": "Samsung",
+     "model": "Galaxy A04e",
+     "price": 33999,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-a38",
+     "brand": "Oppo",
+     "model": "A38",
+     "price": 44999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "realme-c53",
+     "brand": "Realme",
+     "model": "C53",
+     "price": 34999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "realme-11-pro",
+     "brand": "Realme",
+     "model": "11 Pro",
+     "price": 74999,
+     "status": "Expected"
+    },
+    {
+     "slug": "vivo-y17s",
+     "brand": "Vivo",
+     "model": "Y17s",
+     "price": 42999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oneplus-11r",
+     "brand": "OnePlus",
+     "model": "11R",
+     "price": 114999,
+     "status": "Expected"
+    },
+    {
+     "slug": "google-pixel-7",
+     "brand": "Google",
+     "model": "Pixel 7",
+     "price": 144999,
+     "status": "Expected"
+    },
+    {
+     "slug": "google-pixel-7a",
+     "brand": "Google",
+     "model": "Pixel 7a",
+     "price": 137999,
+     "status": "Expected"
+    },
+    {
+     "slug": "google-pixel-6",
+     "brand": "Google",
+     "model": "Pixel 6",
+     "price": 115999,
+     "status": "Expected"
+    },
+    {
+     "slug": "apple-iphone-13",
+     "brand": "Apple",
+     "model": "iPhone 13",
+     "price": 273899,
+     "status": "Official"
+    },
+    {
+     "slug": "xiaomi-redmi-note-11",
+     "brand": "Xiaomi",
+     "model": "Redmi Note 11",
+     "price": 59999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "xiaomi-poco-m6",
+     "brand": "Xiaomi",
+     "model": "Poco M6",
+     "price": 35999,
+     "status": "Expected"
+    },
+    {
+     "slug": "tecno-spark-10",
+     "brand": "Tecno",
+     "model": "Spark 10",
+     "price": 30999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "infinix-hot-30i",
+     "brand": "Infinix",
+     "model": "Hot 30i",
+     "price": 29999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "nokia-c31",
+     "brand": "Nokia",
+     "model": "C31",
+     "price": 41999,
+     "status": "Official"
     }
    ]
   }
