@@ -434,6 +434,151 @@
      "status": "Official"
     }
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "models": [
+    {
+     "slug": "apple-iphone-14",
+     "brand": "Apple",
+     "model": "iPhone 14",
+     "price": 285499,
+     "status": "Official"
+    },
+    {
+     "slug": "apple-iphone-12",
+     "brand": "Apple",
+     "model": "iPhone 12",
+     "price": 175599,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-f15-5g",
+     "brand": "Samsung",
+     "model": "Galaxy F15 5G",
+     "price": 41999,
+     "status": "Expected"
+    },
+    {
+     "slug": "itel-p40",
+     "brand": "Itel",
+     "model": "P40",
+     "price": 23999,
+     "status": "Official"
+    },
+    {
+     "slug": "itel-s23-plus",
+     "brand": "Itel",
+     "model": "S23+",
+     "price": 39999,
+     "status": "Official"
+    },
+    {
+     "slug": "honor-x8a",
+     "brand": "Honor",
+     "model": "X8a",
+     "price": 69999,
+     "status": "Expected"
+    },
+    {
+     "slug": "honor-x6b",
+     "brand": "Honor",
+     "model": "X6b",
+     "price": 23999,
+     "status": "Expected"
+    },
+    {
+     "slug": "xiaomi-redmi-note-13-5g",
+     "brand": "Xiaomi",
+     "model": "Redmi Note 13 5G",
+     "price": 55999,
+     "status": "Expected"
+    },
+    {
+     "slug": "vivo-y27",
+     "brand": "Vivo",
+     "model": "Y27",
+     "price": 47999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oppo-reno-10-5g",
+     "brand": "Oppo",
+     "model": "Reno 10 5G",
+     "price": 107999,
+     "status": "Expected"
+    },
+    {
+     "slug": "sony-xperia-5-iii",
+     "brand": "Sony",
+     "model": "Xperia 5 III",
+     "price": 173999,
+     "status": "Expected"
+    },
+    {
+     "slug": "poco-f5",
+     "brand": "Poco",
+     "model": "F5",
+     "price": 89999,
+     "status": "Expected"
+    },
+    {
+     "slug": "poco-m5",
+     "brand": "Poco",
+     "model": "M5",
+     "price": 29999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-f54-5g",
+     "brand": "Samsung",
+     "model": "Galaxy F54 5G",
+     "price": 74499,
+     "status": "Expected"
+    },
+    {
+     "slug": "apple-iphone-13-mini",
+     "brand": "Apple",
+     "model": "iPhone 13 mini",
+     "price": 223399,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-a78",
+     "brand": "Oppo",
+     "model": "A78",
+     "price": 64999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oppo-reno-11f-5g",
+     "brand": "Oppo",
+     "model": "Reno 11F 5G",
+     "price": 84999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oppo-reno-12f",
+     "brand": "Oppo",
+     "model": "Reno 12F",
+     "price": 59999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "realme-11-5g",
+     "brand": "Realme",
+     "model": "11 5G",
+     "price": 64999,
+     "status": "Expected"
+    },
+    {
+     "slug": "realme-c67",
+     "brand": "Realme",
+     "model": "C67",
+     "price": 44999,
+     "status": "Official"
+    }
+   ]
   }
  ]
 }
