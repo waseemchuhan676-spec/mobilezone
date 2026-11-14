@@ -579,6 +579,151 @@
      "status": "Official"
     }
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "models": [
+    {
+     "slug": "google-pixel-7-pro",
+     "brand": "Google",
+     "model": "Pixel 7 Pro",
+     "price": 209999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "poco-x5-5g",
+     "brand": "Poco",
+     "model": "X5 5G",
+     "price": 99999,
+     "status": "Expected"
+    },
+    {
+     "slug": "xiaomi-redmi-12-5g",
+     "brand": "Xiaomi",
+     "model": "Redmi 12 5G",
+     "price": 39999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "xiaomi-12-lite",
+     "brand": "Xiaomi",
+     "model": "12 Lite",
+     "price": 94999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "tecno-pova-6",
+     "brand": "Tecno",
+     "model": "Pova 6",
+     "price": 64999,
+     "status": "Expected"
+    },
+    {
+     "slug": "infinix-note-30i",
+     "brand": "Infinix",
+     "model": "Note 30i",
+     "price": 59999,
+     "status": "Expected"
+    },
+    {
+     "slug": "infinix-note-40-pro-5g",
+     "brand": "Infinix",
+     "model": "Note 40 Pro 5G",
+     "price": 87999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-f34-5g",
+     "brand": "Samsung",
+     "model": "Galaxy F34 5G",
+     "price": 64999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-a04s",
+     "brand": "Samsung",
+     "model": "Galaxy A04s",
+     "price": 39999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-a05",
+     "brand": "Samsung",
+     "model": "Galaxy A05",
+     "price": 24999,
+     "status": "Official"
+    },
+    {
+     "slug": "vivo-x80",
+     "brand": "Vivo",
+     "model": "X80",
+     "price": 169999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "vivo-y27s",
+     "brand": "Vivo",
+     "model": "Y27s",
+     "price": 46999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "honor-x9-5g",
+     "brand": "Honor",
+     "model": "X9 5G",
+     "price": 49999,
+     "status": "Expected"
+    },
+    {
+     "slug": "realme-c65",
+     "brand": "Realme",
+     "model": "C65",
+     "price": 44999,
+     "status": "Official"
+    },
+    {
+     "slug": "realme-11",
+     "brand": "Realme",
+     "model": "11",
+     "price": 44999,
+     "status": "Expected"
+    },
+    {
+     "slug": "realme-10-pro-plus",
+     "brand": "Realme",
+     "model": "10 Pro+",
+     "price": 82999,
+     "status": "Expected"
+    },
+    {
+     "slug": "oppo-a3",
+     "brand": "Oppo",
+     "model": "A3",
+     "price": 39999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "apple-iphone-11",
+     "brand": "Apple",
+     "model": "iPhone 11",
+     "price": 144899,
+     "status": "Official"
+    },
+    {
+     "slug": "apple-iphone-12-mini",
+     "brand": "Apple",
+     "model": "iPhone 12 mini",
+     "price": 157399,
+     "status": "Official"
+    },
+    {
+     "slug": "apple-iphone-11-pro-max",
+     "brand": "Apple",
+     "model": "iPhone 11 Pro Max",
+     "price": 226599,
+     "status": "Official"
+    }
+   ]
   }
  ]
 }
