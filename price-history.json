@@ -724,6 +724,296 @@
      "status": "Official"
     }
    ]
+  },
+  {
+   "date": "2026-11-25",
+   "models": [
+    {
+     "slug": "poco-x8-pro",
+     "brand": "Poco",
+     "model": "X8 Pro",
+     "price": 189999,
+     "status": "Official"
+    },
+    {
+     "slug": "itel-a50",
+     "brand": "Itel",
+     "model": "A50",
+     "price": 16999,
+     "status": "Official"
+    },
+    {
+     "slug": "itel-a90",
+     "brand": "Itel",
+     "model": "A90",
+     "price": 20999,
+     "status": "Official"
+    },
+    {
+     "slug": "poco-m7",
+     "brand": "Poco",
+     "model": "M7",
+     "price": 39999,
+     "status": "Expected"
+    },
+    {
+     "slug": "honor-x6c",
+     "brand": "Honor",
+     "model": "X6c",
+     "price": 49999,
+     "status": "Official"
+    },
+    {
+     "slug": "nothing-cmf-phone-2-pro",
+     "brand": "Nothing",
+     "model": "CMF Phone 2 Pro",
+     "price": 102249,
+     "status": "Official"
+    },
+    {
+     "slug": "oneplus-13r",
+     "brand": "OnePlus",
+     "model": "13R",
+     "price": 149999,
+     "status": "Import"
+    },
+    {
+     "slug": "nothing-phone-3a-pro",
+     "brand": "Nothing",
+     "model": "Phone 3a Pro",
+     "price": 183499,
+     "status": "Official"
+    },
+    {
+     "slug": "apple-iphone-16e",
+     "brand": "Apple",
+     "model": "iPhone 16e",
+     "price": 289999,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-reno-14",
+     "brand": "Oppo",
+     "model": "Reno 14",
+     "price": 149999,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-reno-14-pro",
+     "brand": "Oppo",
+     "model": "Reno 14 Pro",
+     "price": 219999,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-a5-pro",
+     "brand": "Oppo",
+     "model": "A5 Pro",
+     "price": 54999,
+     "status": "Official"
+    },
+    {
+     "slug": "vivo-v60",
+     "brand": "Vivo",
+     "model": "V60",
+     "price": 149999,
+     "status": "Official"
+    },
+    {
+     "slug": "vivo-y29",
+     "brand": "Vivo",
+     "model": "Y29",
+     "price": 49999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-f06-5g",
+     "brand": "Samsung",
+     "model": "Galaxy F06 5G",
+     "price": 34999,
+     "status": "Import"
+    },
+    {
+     "slug": "samsung-galaxy-f16-5g",
+     "brand": "Samsung",
+     "model": "Galaxy F16 5G",
+     "price": 46999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-xcover7",
+     "brand": "Samsung",
+     "model": "Galaxy XCover7",
+     "price": 139999,
+     "status": "Expected"
+    },
+    {
+     "slug": "xiaomi-redmi-14c-5g",
+     "brand": "Xiaomi",
+     "model": "Redmi 14C 5G",
+     "price": 29999,
+     "status": "Expected"
+    },
+    {
+     "slug": "tecno-phantom-v-flip2",
+     "brand": "Tecno",
+     "model": "Phantom V Flip2",
+     "price": 189999,
+     "status": "Official"
+    },
+    {
+     "slug": "realme-15",
+     "brand": "Realme",
+     "model": "15",
+     "price": 119999,
+     "status": "Official"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "models": [
+    {
+     "slug": "samsung-galaxy-f14-5g",
+     "brand": "Samsung",
+     "model": "Galaxy F14 5G",
+     "price": 37999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-z-flip5",
+     "brand": "Samsung",
+     "model": "Galaxy Z Flip5",
+     "price": 368999,
+     "status": "Official"
+    },
+    {
+     "slug": "xiaomi-redmi-note-13-pro-5g",
+     "brand": "Xiaomi",
+     "model": "Redmi Note 13 Pro 5G",
+     "price": 64649,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "poco-m5s",
+     "brand": "Poco",
+     "model": "M5s",
+     "price": 45999,
+     "status": "Expected"
+    },
+    {
+     "slug": "samsung-galaxy-a23",
+     "brand": "Samsung",
+     "model": "Galaxy A23",
+     "price": 78499,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-s21-5g",
+     "brand": "Samsung",
+     "model": "Galaxy S21 5G",
+     "price": 176499,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-a32",
+     "brand": "Samsung",
+     "model": "Galaxy A32",
+     "price": 75999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "infinix-smart-8-plus",
+     "brand": "Infinix",
+     "model": "Smart 8 Plus",
+     "price": 26999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "tecno-pova-5",
+     "brand": "Tecno",
+     "model": "Pova 5",
+     "price": 38999,
+     "status": "Official"
+    },
+    {
+     "slug": "tecno-phantom-x2-pro",
+     "brand": "Tecno",
+     "model": "Phantom X2 Pro",
+     "price": 98999,
+     "status": "Official"
+    },
+    {
+     "slug": "realme-c63",
+     "brand": "Realme",
+     "model": "C63",
+     "price": 34999,
+     "status": "Official"
+    },
+    {
+     "slug": "realme-10",
+     "brand": "Realme",
+     "model": "10",
+     "price": 39999,
+     "status": "Official"
+    },
+    {
+     "slug": "tecno-pova-6-neo",
+     "brand": "Tecno",
+     "model": "Pova 6 Neo",
+     "price": 49999,
+     "status": "Official"
+    },
+    {
+     "slug": "apple-iphone-13-pro",
+     "brand": "Apple",
+     "model": "iPhone 13 Pro",
+     "price": 342999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "apple-iphone-14-pro",
+     "brand": "Apple",
+     "model": "iPhone 14 Pro",
+     "price": 518999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "apple-iphone-15-pro-max",
+     "brand": "Apple",
+     "model": "iPhone 15 Pro Max",
+     "price": 474999,
+     "status": "Official"
+    },
+    {
+     "slug": "oppo-find-x5",
+     "brand": "Oppo",
+     "model": "Find X5",
+     "price": 189999,
+     "status": "Official"
+    },
+    {
+     "slug": "honor-magic-5-lite",
+     "brand": "Honor",
+     "model": "Magic 5 Lite",
+     "price": 114999,
+     "status": "Official"
+    },
+    {
+     "slug": "honor-200-lite",
+     "brand": "Honor",
+     "model": "200 Lite",
+     "price": 68999,
+     "status": "Official"
+    },
+    {
+     "slug": "sony-xperia-10-vi",
+     "brand": "Sony",
+     "model": "Xperia 10 VI",
+     "price": 144999,
+     "status": "Official"
+    }
+   ]
   }
  ]
 }
