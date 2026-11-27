@@ -1014,6 +1014,151 @@
      "status": "Official"
     }
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "models": [
+    {
+     "slug": "sony-xperia-10-iv",
+     "brand": "Sony",
+     "model": "Xperia 10 IV",
+     "price": 98999,
+     "status": "Official"
+    },
+    {
+     "slug": "sony-xperia-1-iii",
+     "brand": "Sony",
+     "model": "Xperia 1 III",
+     "price": 231400,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-s20-fe-5g",
+     "brand": "Samsung",
+     "model": "Galaxy S20 FE 5G",
+     "price": 119999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "samsung-galaxy-z-flip4",
+     "brand": "Samsung",
+     "model": "Galaxy Z Flip4",
+     "price": 332999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-z-fold4",
+     "brand": "Samsung",
+     "model": "Galaxy Z Fold4",
+     "price": 539999,
+     "status": "Official"
+    },
+    {
+     "slug": "samsung-galaxy-a52s-5g",
+     "brand": "Samsung",
+     "model": "Galaxy A52s 5G",
+     "price": 71999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "apple-iphone-12-pro-max",
+     "brand": "Apple",
+     "model": "iPhone 12 Pro Max",
+     "price": 236999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "xiaomi-redmi-note-12-pro-5g",
+     "brand": "Xiaomi",
+     "model": "Redmi Note 12 Pro 5G",
+     "price": 89999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "xiaomi-13-pro",
+     "brand": "Xiaomi",
+     "model": "13 Pro",
+     "price": 214999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "realme-9i",
+     "brand": "Realme",
+     "model": "9i",
+     "price": 77500,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "vivo-v23-5g",
+     "brand": "Vivo",
+     "model": "V23 5G",
+     "price": 99999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "oppo-a96",
+     "brand": "Oppo",
+     "model": "A96",
+     "price": 77999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "realme-c51",
+     "brand": "Realme",
+     "model": "C51",
+     "price": 28999,
+     "status": "Official"
+    },
+    {
+     "slug": "realme-note-50",
+     "brand": "Realme",
+     "model": "Note 50",
+     "price": 24999,
+     "status": "Official"
+    },
+    {
+     "slug": "infinix-note-11-pro",
+     "brand": "Infinix",
+     "model": "Note 11 Pro",
+     "price": 35999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "infinix-hot-11s",
+     "brand": "Infinix",
+     "model": "Hot 11S",
+     "price": 25999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "tecno-camon-18-premier",
+     "brand": "Tecno",
+     "model": "Camon 18 Premier",
+     "price": 74999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "tecno-spark-9-pro",
+     "brand": "Tecno",
+     "model": "Spark 9 Pro",
+     "price": 28999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "tecno-pova-3",
+     "brand": "Tecno",
+     "model": "Pova 3",
+     "price": 34999,
+     "status": "Discontinued"
+    },
+    {
+     "slug": "honor-magic-5-pro",
+     "brand": "Honor",
+     "model": "Magic 5 Pro",
+     "price": 214999,
+     "status": "Discontinued"
+    }
+   ]
   }
  ]
 }

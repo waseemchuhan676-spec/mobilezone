@@ -983,6 +983,26 @@ const phones=[
 {b:"Honor",m:"Magic 5 Lite",p:114999,r:"6GB",s:"128GB",c:"64MP",bat:"5100mAh",g:"yes",n:1,img:"honor-magic-5-lite.webp"},
 {b:"Honor",m:"200 Lite",p:68999,r:"8GB",s:"256GB",c:"108MP",bat:"4500mAh",g:"yes",n:1,img:"honor-200-lite.webp"},
 {b:"Sony",m:"Xperia 10 VI",p:144999,r:"8GB",s:"128GB",c:"48MP",bat:"5000mAh",g:"yes",n:1,img:"sony-xperia-10-vi.webp"},
+{b:"Sony",m:"Xperia 10 IV",p:98999,r:"6GB",s:"128GB",c:"12MP",bat:"5000mAh",g:"yes",n:1,img:"sony-xperia-10-iv.webp"},
+{b:"Sony",m:"Xperia 1 III",p:231400,r:"12GB",s:"256GB",c:"12MP",bat:"4500mAh",g:"yes",n:1,img:"sony-xperia-1-iii.webp"},
+{b:"Samsung",m:"Galaxy S20 FE 5G",p:119999,r:"8GB",s:"128GB",c:"12MP",bat:"4500mAh",g:"yes",n:1,img:"samsung-galaxy-s20-fe-5g.webp"},
+{b:"Samsung",m:"Galaxy Z Flip4",p:332999,r:"8GB",s:"256GB",c:"12MP",bat:"3700mAh",g:"yes",n:1,img:"samsung-galaxy-z-flip4.webp"},
+{b:"Samsung",m:"Galaxy Z Fold4",p:539999,r:"12GB",s:"256GB",c:"50MP",bat:"4400mAh",g:"yes",n:1,img:"samsung-galaxy-z-fold4.webp"},
+{b:"Samsung",m:"Galaxy A52s 5G",p:71999,r:"8GB",s:"128GB",c:"64MP",bat:"4500mAh",g:"yes",n:1,img:"samsung-galaxy-a52s-5g.webp"},
+{b:"Apple",m:"iPhone 12 Pro Max",p:236999,r:"6GB",s:"128GB",c:"12MP",bat:"3687mAh",g:"yes",n:1,img:"apple-iphone-12-pro-max.webp"},
+{b:"Xiaomi",m:"Redmi Note 12 Pro 5G",p:89999,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"yes",n:1,img:"xiaomi-redmi-note-12-pro-5g.webp"},
+{b:"Xiaomi",m:"13 Pro",p:214999,r:"12GB",s:"512GB",c:"50MP",bat:"4820mAh",g:"yes",n:1,img:"xiaomi-13-pro.webp"},
+{b:"Realme",m:"9i",p:77500,r:"6GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",n:1,img:"realme-9i.webp"},
+{b:"Vivo",m:"V23 5G",p:99999,r:"12GB",s:"256GB",c:"64MP",bat:"4200mAh",g:"yes",n:1,img:"vivo-v23-5g.webp"},
+{b:"Oppo",m:"A96",p:77999,r:"8GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",n:1,img:"oppo-a96.webp"},
+{b:"Realme",m:"C51",p:28999,r:"4GB",s:"64GB",c:"50MP",bat:"5000mAh",g:"no",n:1,img:"realme-c51.webp"},
+{b:"Realme",m:"Note 50",p:24999,r:"4GB",s:"64GB",c:"13MP",bat:"5000mAh",g:"no",n:1,img:"realme-note-50.webp"},
+{b:"Infinix",m:"Note 11 Pro",p:35999,r:"8GB",s:"128GB",c:"64MP",bat:"5000mAh",g:"no",n:1,img:"infinix-note-11-pro.webp"},
+{b:"Infinix",m:"Hot 11S",p:25999,r:"4GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",n:1,img:"infinix-hot-11s.webp"},
+{b:"Tecno",m:"Camon 18 Premier",p:74999,r:"8GB",s:"256GB",c:"64MP",bat:"4750mAh",g:"no",n:1,img:"tecno-camon-18-premier.webp"},
+{b:"Tecno",m:"Spark 9 Pro",p:28999,r:"4GB",s:"128GB",c:"50MP",bat:"5000mAh",g:"no",n:1,img:"tecno-spark-9-pro.webp"},
+{b:"Tecno",m:"Pova 3",p:34999,r:"4GB",s:"64GB",c:"50MP",bat:"7000mAh",g:"no",n:1,img:"tecno-pova-3.webp"},
+{b:"Honor",m:"Magic 5 Pro",p:214999,r:"8GB",s:"256GB",c:"50MP",bat:"5100mAh",g:"yes",n:1,img:"honor-magic-5-pro.webp"},
 ];
 
 /* Infinix historical catalog: 2016–2026 (older/discontinued models) */
@@ -1112,7 +1132,7 @@ showLatest();
 render(latestPhones.slice(0,8),"popular");
 
 /* Freshness: single date constant, update on each price refresh */
-const PRICE_UPDATED="26 November 2026";
+const PRICE_UPDATED="27 November 2026";
 document.querySelectorAll(".price-updated").forEach(el=>el.textContent="Prices updated: "+PRICE_UPDATED);
 document.querySelectorAll(".hero-phone").forEach(f=>{const p=phones.find(x=>x.m===f.dataset.model);if(p&&p.p>0){const s=f.querySelector(".hp-price");if(s)s.textContent="Rs. "+p.p.toLocaleString("en-US");}});
 document.getElementById("heroStatModels").textContent=phones.length;
