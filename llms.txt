@@ -7,9 +7,9 @@ Canonical site: https://mobilezone.site/
 
 ## What the site covers
 
-- 63 phone models across Samsung, Apple, Xiaomi, Redmi, Vivo, Oppo, Infinix, Tecno,
-  OnePlus, Google, Motorola, Honor, Sparx, Huawei, Nothing, and Nokia.
-- New & Incoming Mobiles: the 27 latest models, shown first on the home page.
+- 403 phone models across Samsung, Apple, Xiaomi, Redmi, Vivo, Oppo, Infinix, Tecno,
+  OnePlus, Google, Motorola, Honor, Sparx, Huawei, Nothing, Nokia, Sony, Poco, Itel, and Realme.
+- New & Incoming Mobiles: the 207 latest models, shown first on the home page.
 - Best Mobiles Under Rs 50,000 in Pakistan: a dated budget guide (priced models
   Rs 50,000 and under, cheapest first).
 - Best Phones By Use Case: budget, camera, battery, gaming, and 5G picks.
@@ -21,7 +21,7 @@ Canonical site: https://mobilezone.site/
 ## Prices and freshness
 
 - Prices are in Pakistani Rupees (PKR), as listed on the site.
-- Prices updated: 29 October 2026.
+- Prices updated: 27 November 2026.
 - Phones without a confirmed price are labelled "Price not confirmed".
 - Models that have not launched yet are labelled "Expected" (for example,
   the Samsung Galaxy S26 Ultra); expected prices are not official prices.
@@ -39,10 +39,10 @@ Canonical site: https://mobilezone.site/
 ## Pages
 
 - Homepage: https://mobilezone.site/
-- Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices
+- Brand pages: /samsung-mobile-prices, /apple-iphone-prices, /infinix-mobile-prices, /tecno-mobile-prices, /vivo-mobile-prices, /oppo-mobile-prices, /xiaomi-mobile-prices, /redmi-mobile-prices, /oneplus-mobile-prices, /google-pixel-prices, /motorola-mobile-prices, /honor-mobile-prices, /sparx-mobile-prices, /huawei-mobile-prices, /nothing-mobile-prices, /nokia-mobile-prices, /sony-mobile-prices, /poco-mobile-prices, /itel-mobile-prices, /realme-mobile-prices
 - Budget pages: /best-phones-under-20000, /best-phones-under-30000, /best-phones-under-40000, /best-phones-under-50000, /best-phones-under-70000, /best-phones-under-100000, /best-5g-phones-pakistan
 - Latest phones: /latest-mobile-phones, /new-mobile-phones-pakistan-2026
-- Individual phone pages: /<brand>-<model>-price-pakistan (63 models: 56 live-priced + 7 archive with photos, price not confirmed)
+- Individual phone pages: /<brand>-<model>-price-pakistan (403 models: 396 live-priced + 7 archive with photos, price not confirmed)
 - Phone pages show confirmed specs only (price, RAM, storage, camera, battery, 5G). Display, processor, charging, dimensions, PTA status and warranty are marked as not confirmed where unverified — never estimated.
 
 - Compare tool: /compare-mobiles (pick up to 3 phones, side-by-side price/RAM/storage/camera/battery/5G; no winner declared; prices approximate)
